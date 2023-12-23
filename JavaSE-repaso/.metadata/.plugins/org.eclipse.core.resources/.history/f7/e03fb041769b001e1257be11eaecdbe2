@@ -1,0 +1,58 @@
+package pruebas;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.util.function.Function;
+import java.util.function.Predicate;
+
+import pruebas.Test.I1;
+
+public class Operaciones {
+
+	public static void main(String[] args) {
+		List<Integer> enteros = List.of(8, 5, -2, 4, 1, 7, 12);
+		// LLAMANDO AL MÉTODO PRINT DEFINIDO EN ESTA CLASE, MOSTRAR
+		// LOS NUMEROS PARES DE LA LISTA DE ENTEROS.
+		Predicate<Integer> pares = n -> {
+			return n % 2 == 0;
+		};
+		print(enteros, pares);
+		print(enteros, n -> n % 2 == 0);
+		// OTRO QUE IMPRIMA LOS NEGATIVOS
+		print(enteros, n -> n < 0);
+		
+		//LLAMANDO AL MÉTODO TRANSFORM, COGER LA COLECCIÓN DE ENTEROS Y 
+		//OBTENER UNA COLECCIÓN CON LAS RAICES CUADRADAS DE CADA ENTERO
+		System.out.println("------------");
+		Function<Integer, Double> tx = n->{
+			return Math.sqrt(n);
+		};
+		Collection<Double> raices = transform(enteros,tx);
+	}
+
+	// METODO QUE MUESTRA TODOS LOS NÚMEROS DE LA COLECCIÓN RECIBIDA
+	// COMO PARAMETRO Y QUE CUMPLE LA CONDICIÓN RECIBIDA TAMBIÉN COMO PARAMETRO
+	//
+	static void print(Collection<Integer> col, Predicate<Integer> pr) {
+		for (Integer in : col) {
+			if (pr.test(in)) {
+				System.out.println(in);
+			}
+		}
+	}
+
+	// MÉTODO QUE RECIBE UNA COLECCIÓN DE ENTEROS Y DEVUELVE UNA COLECCIÓN DE DOUBLE
+	// RESULTANTE DE TRANFORMAR
+	// CADA ENTERO DE LA COLECCIÓN EN UN DOUBLE, SEGÚN LA OPERACIÓN
+	// DE TRANSFORMACIÓN RECIBIDA COMO PARÁMETRO
+
+	static Collection<Double> transform(Collection<Integer> col, Function<Integer, Double> tx) {
+		ArrayList<Double> resultado = new ArrayList<Double>();
+		for (Integer in : col) {
+			resultado.add(tx.apply(in));
+		}
+		return resultado;
+	}
+
+}

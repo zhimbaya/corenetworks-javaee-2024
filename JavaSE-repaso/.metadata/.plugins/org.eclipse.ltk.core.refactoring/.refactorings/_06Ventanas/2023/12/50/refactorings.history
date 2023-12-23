@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;MiVentana.java&apos; to &apos;_13Calculadora_interfaz/src/presentation&apos;&#x0D;&#x0A;- Original project: &apos;_06Ventanas&apos;&#x0D;&#x0A;- Destination element: &apos;_13Calculadora_interfaz/src/presentation&apos;&#x0D;&#x0A;- Original element: &apos;presentacion.MiVentana.java&apos;" description="Copy compilation unit" destination="=_13Calculadora_interfaz/src&lt;presentation" element1="/src&lt;presentacion{MiVentana.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1702669001763" units="1" version="1.0"/>
+</session>

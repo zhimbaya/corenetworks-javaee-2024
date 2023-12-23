@@ -1,0 +1,22 @@
+package service;
+
+public class CuentaBancariaLimite extends CuentaBancaria {
+
+	/*
+	 * clase CuentaBancariaLimite Clase que hereda CuentaBancaria. Incorporará un
+	 * atributo "limite", para limitar la extracción a dicho valor. Dispondrá
+	 * también de un método ajustarLimite(), que fijará el límite en la mitad del
+	 * saldo
+	 */
+	private double limite;
+
+	public CuentaBancariaLimite(double saldo,double limite) {
+		super(saldo);
+		this.limite = limite;
+	}
+
+	public double ajustarLimite() {
+		
+	}
+
+}

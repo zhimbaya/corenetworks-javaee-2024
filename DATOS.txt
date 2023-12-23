@@ -1,0 +1,43 @@
+12/12/2023
+1.- Descargar eclipse
+2.- Utilizar la vista de Java
+3.- Desmarcar modularidad
+13/12/2023
+https://www.udemy.com/course/aprende-a-programar-en-java/?couponCode=D655A11AA347AFE2737E
+https://www.udemy.com/course/programacion-orientada-a-objetos-con-java-b/?couponCode=0113E81CBA9482D12FBC
+
+14/12/23
+https://docs.oracle.com/en/java/javase/21/docs/api/index.html
+https://github.com/amartinsierra/javaenterprise2023
+
+15/12/23
+Git y github
+Java 8
+-metodo con código (default y static)
+-interfaces funcionales
+
+18/12/2023
+- Descargar Tomcat 10
+- Nuevo Workspace
+- Instalara servidor
+- Dynamic Web Proyect
+- Ejecutar servidor Tomcat y web sencilla
+- Crear un servlet
+
+19/12/2023
+Git
+import > project from git > clone Uri
+>
+https://github.com/zhimbaya/corenetworks-java-2024.git
+git@github.com:zhimbaya/corenetworks-java-2024.git
+
+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
+
+JSP
+
+20/12/23
+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
+
+A partir del proyecto 15 añadir la anotación y quitar de web.xml todo del servlet.
+
+

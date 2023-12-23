@@ -1,0 +1,45 @@
+package presentacion;
+
+import java.util.Scanner;
+
+public class Cajero {
+	/*
+	 * Al iniciar el programa, se solicita un saldo inicial y un límite. A partir de
+	 * ahí, se mostrará el menú:
+	 * 
+	 * 1.- Ingresar 2.- Extraer 3.- Saldo y movimientos 4.- Salir
+	 */
+	public static void main(String[] args) {
+		int opcion;
+		Scanner sc = new Scanner(System.in);
+		do {
+			mostrarMenu();
+			opcion = sc.nextInt();
+			switch (opcion) {
+			case 1:
+				nuevoCurso();
+				break;
+			case 2:
+				cursoPrecioMax();
+				break;
+			case 3:
+				eliminarCurso();
+				break;
+			case 4:
+				System.out.println("Adios!!");
+				break;
+			default:
+				break;
+			}
+		} while (opcion != 5);
+
+	}
+	private static void mostrarMenu() {
+		System.out.println("----------- M E N Ú -----------");
+		System.out.println("1.- Ingresar");
+		System.out.println("2.- Extraer");
+		System.out.println("3.- Saldo y Movimientos");
+		System.out.println("4.- Salir");
+		System.out.println("----------- F I N -----------");
+	}
+}

@@ -1,0 +1,35 @@
+package service;
+
+import exceptions.SaldoNegativoException;
+
+public class CuentaBancaria {
+	private double saldo;
+
+	public CuentaBancaria(double saldo) {
+		this.saldo = saldo;
+	}
+
+	public void ingresar(double cantidad) {
+		saldo += cantidad;
+	}
+	public void extraer(double cantidad) throws SaldoNegativoException{ //PROPAGO LA EXCEPCION
+		if (cantidad > saldo) {
+			//PROVOCAR LA EXCEPTION
+			throw new SaldoNegativoException();
+		}
+		saldo -= cantidad;
+	}
+
+	public double getSaldo() {
+		return saldo;
+	}
+
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+
+	
+	
+	
+	
+}

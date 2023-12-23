@@ -1,0 +1,11 @@
+package service;
+
+public class CuentaBancariaMovimientos extends CuentaBancariaLimite {
+
+	public CuentaBancariaMovimientos(double saldo, double limite) {
+		super(saldo, limite);
+		
+	}
+	
+
+}

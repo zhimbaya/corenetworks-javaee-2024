@@ -1,0 +1,15 @@
+package pruebas;
+
+public class OperacionesNumero {
+
+	public static void main(String[] args) {
+		// REALIZAR UN MÉTODO QUE CALCULE EL CUADRADO DE CUALQUIER TIPO DE
+		// NÚMERO, EL RESULTADO SE DEVUELVE COMO ENTERO (INT)
+
+	}
+
+	public void cuadrado() {
+		System.out.println("Indeterminado");
+	}
+
+}

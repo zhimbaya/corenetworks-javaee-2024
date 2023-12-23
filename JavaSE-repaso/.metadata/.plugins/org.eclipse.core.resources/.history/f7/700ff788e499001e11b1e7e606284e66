@@ -1,0 +1,10 @@
+package principal;
+
+public class Primera {
+	public Primera() {
+		System.out.println("Constructor de la primera");
+	}
+	public void print() {
+		System.out.println("Imprimiendo la primera");
+	}
+}

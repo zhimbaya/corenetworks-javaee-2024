@@ -1,0 +1,18 @@
+package geometria;
+
+public class Test {
+
+	public static void main(String[] args) {
+
+		Figura triangulo = new Triangulo("amarillo", 3);
+		Figura circulo = new Circulo("amarillo", 3, 2);
+		mostrarDatos(new Triangulo("Naranja",5));
+		mostrarDatos(new Circulo("Amarillo",5,6));
+
+	}
+
+	static void mostrarDatos(Figura f) {
+		System.out.println("Color polimorfico: " + f.getColor());
+		System.out.println("Superficie polimorfico: " + f.superficie());
+	}
+}

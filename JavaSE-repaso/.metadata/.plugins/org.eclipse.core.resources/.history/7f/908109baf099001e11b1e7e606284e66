@@ -1,0 +1,19 @@
+package presentacion;
+
+import java.awt.Color;
+
+import javax.swing.JFrame;
+
+public class MiVentana extends JFrame {
+
+	public MiVentana(String title) {
+		super(title);
+		// ESTABLECER TAMAÑO Y POSICION Y HERENCIA VISIBLE
+		setBounds(200, 200, 600, 400);
+		//setBackground(Color.YELLOW);
+		getContentPane().setBackground(Color.YELLOW);
+		setVisible(true);
+		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+	}
+
+}

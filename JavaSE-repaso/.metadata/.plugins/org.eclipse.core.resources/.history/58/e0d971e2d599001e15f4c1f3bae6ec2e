@@ -1,0 +1,16 @@
+package presentacion;
+
+import java.util.Scanner;
+
+public class MenuCursos {
+
+	public static void main(String[] args) {
+		int opcion;
+		Scanner sc = new Scanner (System.in);
+		do {
+			mostrarMenu();
+		} while (opcion != 5);
+
+	}
+
+}

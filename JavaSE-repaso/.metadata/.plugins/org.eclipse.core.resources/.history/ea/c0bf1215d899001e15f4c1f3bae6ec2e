@@ -1,0 +1,76 @@
+package presentacion;
+
+import java.util.Scanner;
+
+import service.CursosService;
+
+public class MenuCursos {
+	static CursosService service = new CursosService();
+
+	public static void main(String[] args) {
+		int opcion;
+		Scanner sc = new Scanner(System.in);
+		do {
+			mostrarMenu();
+			opcion = sc.nextInt();
+			switch (opcion) {
+			case 1:
+				nuevoCurso();
+				break;
+			case 2:
+				cursoPrecioMax();
+				break;
+			case 3:
+				eliminarCurso();
+				break;
+			case 4:
+				modificarDuracion();
+				break;
+			case 5:
+				System.out.println("Adios!!");
+				break;
+			default:
+				break;
+			}
+		} while (opcion != 5);
+
+	}
+
+	private static void nuevoCurso() {
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Introduce el nombre");
+		String nombre = scan.nextLine();
+
+		System.out.println("Introduce el duración");
+		int duracion = scan.nextInt();
+
+		System.out.println("Introduce el precio");
+		double precio = scan.nextDouble();
+		service.nuevo(nombre, duracion, precio);
+
+	}
+
+	private static void cursoPrecioMax() {
+		// TODO Auto-generated method stub
+
+	}
+
+	private static void eliminarCurso() {
+		// TODO Auto-generated method stub
+
+	}
+
+	private static void modificarDuracion() {
+		// TODO Auto-generated method stub
+
+	}
+
+	private static void mostrarMenu() {
+		System.out.println("1.- Nuevo Curso");
+		System.out.println("2.- Buscar curso por precio máximo");
+		System.out.println("3.- Eliminar Curso");
+		System.out.println("4.- Modificar duración Curso");
+		System.out.println("5.- Salir Curso");
+	}
+}

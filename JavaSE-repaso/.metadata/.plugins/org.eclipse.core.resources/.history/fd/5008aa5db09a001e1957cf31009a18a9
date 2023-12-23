@@ -1,0 +1,9 @@
+package geometricas;
+
+public abstract class Figura {
+	// LA CLASE FIGURA REPRESENTA UNA FIGURA GEOMÉTRICA
+	// TODA FIGURA GEOMÉTRICA SE CARACTERIZA POR UN ATRIBUTO "COLOR"
+	// Y UN MÉTODO PARA CALCULAR SU SUPERFICIE
+	public String color;
+	public abstract double superficie();
+}

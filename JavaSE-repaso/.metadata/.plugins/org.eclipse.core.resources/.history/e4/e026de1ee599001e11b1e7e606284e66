@@ -1,0 +1,8 @@
+package principal;
+
+public class Segunda extends Primera {
+	public Segunda() {
+		super();
+		System.out.println("Constructor de la segunda.");
+	}
+}

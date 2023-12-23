@@ -1,0 +1,10 @@
+package presentacion;
+
+public class Cajero {
+	/*
+	 * Al iniciar el programa, se solicita un saldo inicial y un límite. A partir de
+	 * ahí, se mostrará el menú:
+	 * 
+	 * 1.- Ingresar 2.- Extraer 3.- Saldo y movimientos 4.- Salir
+	 */
+}
