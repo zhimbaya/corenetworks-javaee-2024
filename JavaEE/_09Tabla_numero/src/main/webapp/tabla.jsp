@@ -19,7 +19,7 @@
 			<%} %>
 		</table>
 		<br>
-		<a href="numero.html">Volver</a>
+		<a href="numero.html">Volver </a>
 	</center>
 </body>
 </html>
