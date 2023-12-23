@@ -140,7 +140,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="_06Prototipo_buscador" path="/_06Prototipo_buscador" reloadable="true" source="org.eclipse.jst.jee.server:_06Prototipo_buscador"/><Context docBase="_07Jsp_saludo" path="/_07Jsp_saludo" reloadable="true" source="org.eclipse.jst.jee.server:_07Jsp_saludo"/><Context docBase="_13Prototipo_buscador" path="/_13Prototipo_buscador" reloadable="true" source="org.eclipse.jst.jee.server:_13Prototipo_buscador"/><Context docBase="_16Carrito_productos" path="/_16Carrito_productos" reloadable="true" source="org.eclipse.jst.jee.server:_16Carrito_productos"/><Context docBase="_12Ficha_usuarios" path="/_12Ficha_usuarios" reloadable="true" source="org.eclipse.jst.jee.server:_12Ficha_usuarios"/></Host>
+      <Context docBase="_01Pagina_salud" path="/_01Pagina_salud" reloadable="true" source="org.eclipse.jst.jee.server:_01Pagina_salud"/><Context docBase="_09Tabla_numero" path="/_09Tabla_numero" reloadable="true" source="org.eclipse.jst.jee.server:_09Tabla_numero"/></Host>
     </Engine>
   </Service>
 </Server>
