@@ -13,7 +13,7 @@ public class ContarVocales {
 		System.out.println("Introduce una cadena de texto");
 		cad = sc.nextLine();
 		cad = cad.toLowerCase();
-		
+
 		for (int i = 0; i < cad.length(); i++) {
 			letra = cad.charAt(i);
 			switch (letra) {
