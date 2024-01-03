@@ -30,6 +30,7 @@ public class ContarVocales {
 			}
 		}
 		System.out.println("Total de vocales: " + contador);
+		sc.close();
 	}
 
 }

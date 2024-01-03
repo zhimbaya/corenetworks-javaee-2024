@@ -10,7 +10,7 @@ public class Principal {
 		Scanner sc = new Scanner(System.in);
 		GestionNotas gnotas = new GestionNotas();
 		int op;
-		
+
 		do {
 			System.out.println("1. Agregar nota");
 			System.out.println("2. Ver nota media");
@@ -41,7 +41,7 @@ public class Principal {
 				System.out.println("Debes escribir una opción válida");
 			}
 		} while (op != 4);
-		
+		sc.close();
 	}
 
 }

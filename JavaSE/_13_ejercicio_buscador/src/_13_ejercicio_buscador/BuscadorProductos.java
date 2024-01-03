@@ -1,7 +1,5 @@
 package _13_ejercicio_buscador;
 
-import java.util.Scanner;
-
 public class BuscadorProductos {
 
 	public static void main(String[] args) {
