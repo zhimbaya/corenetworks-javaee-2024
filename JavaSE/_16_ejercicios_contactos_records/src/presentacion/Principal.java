@@ -42,13 +42,13 @@ public class Principal {
 				if (c == null) {
 					System.out.println("No se encontró el contacto");
 				} else {
-					System.out.println(c.getNombre() + " - " + c.getEdad() + " - " + c.getEmail());
+					System.out.println(c.nombre() + " - " + c.edad() + " - " + c.email());
 				}
 				break;
 			case 3:
 				Contacto[] todos = gestor.recuperarContactos();
 				for (Contacto con : todos) {
-					System.out.println(con.getNombre() + " - " + con.getEdad() + " - " + con.getEmail());
+					System.out.println(con.nombre() + " - " + con.edad() + " - " + con.email());
 				}
 				break;
 			case 4:

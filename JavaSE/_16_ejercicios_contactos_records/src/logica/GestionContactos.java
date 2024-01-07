@@ -33,18 +33,18 @@ public class GestionContactos {
 	public Contacto buscar(String nombre) {
 		Contacto c = null;
 		for (int i = 0; i < total; i++) {
-			if (contactos[i].getNombre().equals(nombre)) {
+			if (contactos[i].nombre().equals(nombre)) {
 				c = contactos[i];
 				break;
 			}
 		}
 		return c;
 	}
-	
+
 	public Contacto[] recuperarContactos() {
 		Contacto[] existentes = new Contacto[total];
 		for (int i = 0; i < total; i++) {
-			existentes[i]=contactos[i];
+			existentes[i] = contactos[i];
 		}
 		return existentes;
 	}

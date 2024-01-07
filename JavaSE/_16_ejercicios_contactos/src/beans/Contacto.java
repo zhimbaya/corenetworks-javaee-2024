@@ -1,11 +1,11 @@
 package beans;
 
-public class Contactos {
+public class Contacto {
 	private String nombre;
 	private int edad;
 	private String email;
 
-	public Contactos(String nombre, int edad, String email) {
+	public Contacto(String nombre, int edad, String email) {
 		super();
 		this.nombre = nombre;
 		this.edad = edad;
