@@ -4,10 +4,10 @@
 <!-- AÑADIR LA ACCIÓN O ETIQUETA -->
 <!-- 
 1.- Configure - converter to maven proyect
-2.- Agregar la dependencia de mvn en el pom
+2.- Agregar la dependencia de mvn en el pom (la especificación y la implementación)
 3.- Agregar la acción o etiqueta
 4.- Utilizar las etiquetas en el proyecto.
-5.- Ejecutar.
+5.- Ejecutar y funciona aunque aparece un ERROR.
 
  -->
 <!DOCTYPE html>
