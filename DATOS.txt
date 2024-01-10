@@ -2,6 +2,7 @@
 1.- Descargar eclipse
 2.- Utilizar la vista de Java
 3.- Desmarcar modularidad
+
 13/12/2023
 https://www.udemy.com/course/aprende-a-programar-en-java/?couponCode=D655A11AA347AFE2737E
 https://www.udemy.com/course/programacion-orientada-a-objetos-con-java-b/?couponCode=0113E81CBA9482D12FBC
@@ -31,16 +32,22 @@ import > project from git > clone Uri
 https://github.com/zhimbaya/corenetworks-java-2024.git
 git@github.com:zhimbaya/corenetworks-java-2024.git
 
-
-
 JSP
 
 20/12/23
-
 A partir del proyecto 15 añadir la anotación y quitar de web.xml todo del servlet.
 
 10/01/2024
 Instalación de Mysql y workbech
+https://dev.mysql.com/downloads/installer/
+
+PERSISTENCIA
+1.-dependencias (framework + driver de bd)
+2.-configurar cada persistencia
+	- crear entidades y configurarlas
+	- crear el persistence.xml (Projects facets > JPA)
+3.-logica de negocio, JPA
+
 
 
 
