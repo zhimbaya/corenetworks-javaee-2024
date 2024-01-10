@@ -31,13 +31,16 @@ import > project from git > clone Uri
 https://github.com/zhimbaya/corenetworks-java-2024.git
 git@github.com:zhimbaya/corenetworks-java-2024.git
 
-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
+
 
 JSP
 
 20/12/23
-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
 
 A partir del proyecto 15 añadir la anotación y quitar de web.xml todo del servlet.
+
+10/01/2024
+Instalación de Mysql y workbech
+
 
 
