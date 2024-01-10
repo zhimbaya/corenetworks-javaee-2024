@@ -1,0 +1,19 @@
+package view.adapters;
+
+import java.util.List;
+
+import javax.swing.table.DefaultTableModel;
+
+import model.Empleado;
+import service.EmpleadosService;
+
+public class TablaEmpleadosModel extends DefaultTableModel {
+
+	List<Empleado> empleados;
+	
+	public TablaEmpleadosModel() {
+		empleados=new EmpleadosService().empleados();
+	}
+	
+	
+}

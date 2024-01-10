@@ -1,0 +1,10 @@
+package principal;
+
+public class ClienteSaludo {
+
+	public static void main(String[] args) {
+		// Crear objeto socket
+
+	}
+
+}

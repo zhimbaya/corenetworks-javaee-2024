@@ -1,0 +1,10 @@
+package serializacion;
+
+import java.time.LocalDate;
+
+public class DeserializadorFecha implements JsonDeserialization<LocalDate>{
+	
+	@Override
+	public LocalDate deserialieze()
+
+}

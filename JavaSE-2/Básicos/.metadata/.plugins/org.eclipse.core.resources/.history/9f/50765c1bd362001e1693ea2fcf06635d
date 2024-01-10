@@ -1,0 +1,31 @@
+package principal;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.PrintStream;
+
+import javax.imageio.stream.FileCacheImageOutputStream;
+
+public class TestEscrituraAppend {
+
+	public static void main(String[] args) {
+		PrintStream out;
+		try {
+			//objeto para configurar la forma de escritura
+			FileOutputStream fos = new FileOutputStream("c:\\temp\\dias.txt",true);
+			//a partir del objeto anterior creamos en print
+			out = new PrintStream(fos);
+			out.println("jueves");
+			out.println("viernes");
+			
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		finally {
+			out.close();
+		}
+	
+	}
+
+}

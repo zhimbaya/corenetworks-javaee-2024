@@ -1,0 +1,7 @@
+package presentacion;
+
+import java.awt.Frame;
+
+public class LoginWindow extends Frame {
+
+}

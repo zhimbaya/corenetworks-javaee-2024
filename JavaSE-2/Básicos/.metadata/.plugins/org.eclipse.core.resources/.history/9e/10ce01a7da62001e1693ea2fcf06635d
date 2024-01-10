@@ -1,0 +1,29 @@
+package principal;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+import javax.annotation.processing.FilerException;
+
+public class TestLectura {
+
+	public static void main(String[] args) {
+		try {
+		FileReader f = new FileReader("c:\\temp\\dias.txt");
+		BufferedReader bf = new BufferedReader(f);
+		//System.out.println("Linea 1: "+ bf.readLine());
+		//System.out.println("Linea 2: "+ bf.readLine());
+		
+		if (bf.lines() != null) {
+			System.out.println("Linea 1: "+ bf.readLine());
+		}
+		}catch (FilerException ex){
+			ex.printStackTrace();
+		}
+		catch (IOException ex) {
+			ex.printStackTrace();
+		}
+	}
+
+}

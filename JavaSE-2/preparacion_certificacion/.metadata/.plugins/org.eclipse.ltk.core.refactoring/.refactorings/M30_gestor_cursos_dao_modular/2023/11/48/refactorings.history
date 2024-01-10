@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;module-info.java&apos; to &apos;22_servidor_pedidos_con_altas/src&apos;&#x0D;&#x0A;- Original project: &apos;M30_gestor_cursos_dao_modular&apos;&#x0D;&#x0A;- Destination element: &apos;22_servidor_pedidos_con_altas/src&apos;&#x0D;&#x0A;- Original element: &apos;module-info.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="=22_servidor_pedidos_con_altas/src=/optional=/true=/=/maven.pomderived=/true=/" element1="/src=/optional=/true=/=/maven.pomderived=/true=/&lt;{module-info.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1701192239323" units="1" version="1.0"/>
+</session>

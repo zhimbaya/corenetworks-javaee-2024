@@ -1,0 +1,55 @@
+package service;
+
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+
+import modelo.Ciudad;
+
+
+public class CiudadesService {
+	List<Ciudad>ciudades=new ArrayList<>();
+	
+	//recibe los datos de la ciudad la agrega, no piede haber dos ciudades 
+	//con el mosmo nombre y pais. Devuelve boolean si añade o no
+	public boolean nuevaCiudad(String nombre, String pais, long habitantes, double temperatura) {
+		if(ciudades.stream().noneMatch(c->c.getNombre().equals(nombre)&&c.getPais().equals(pais)))
+				ciudades.add(new Ciudad(nombre, pais, habitantes, temperatura));
+		return true;
+	}
+	
+	//a partir de un pais, devuelve el total de cuidades registradas de ese pais
+	public int totalCiudadesPais(String pais) {
+		return (int)ciudades.stream()
+				.filter(c->c.getPais().equals(pais))
+				.count();
+		
+	}
+	
+	//devuelve el total de paises registrados
+	public double totalPias() {
+		return 0;
+	}
+	
+	// a partir de una temperaura, indica si hay alguna cuidad 
+	//con temperatura media inferior a ese valor
+	public boolean existeCiudadTempInf(double temp) {
+		return ciudades.stream().anyMatch(c->c.getTemperaturaMedia()<temp);
+	}
+	
+	//metodo que devuelva los datos del pais cuyo nombre se recibe como parametro
+	
+	public Ciudad ciudadPorNombre(String nombre) {
+		return ciudades.stream()
+				.filter(c->c.getNombre().equals(nombre))
+				.findFirst()
+				.orElse(null);		
+	}
+	//datos de la ciudad mas poblada
+	public Ciudad ciudadMasPoblada() {
+		return	ciudades.stream()
+				.max((a,b)->Long.compare(a.getHabitantes(), b.getHabitantes()))
+				.orElse(null);			
+	}
+
+}

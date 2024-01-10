@@ -1,0 +1,22 @@
+package service;
+
+import java.util.ArrayList;
+
+import model.Ciudad;
+import model.Contacto;
+
+public class CiudadService {
+	Ciudad ciudad = new Ciudad();
+	ArrayList<Ciudad> ciudadeslist = new ArrayList<>();
+	
+	public boolean introducir (String nombre,String pais, int habitantes) {
+		if(!contactos.containsKey(email)) {
+			Contacto contacto=new Contacto(email, nombre, edad, telefono);
+			contactos.put(email, contacto);
+			return true;
+		}
+		return false;
+}
+	
+	
+}

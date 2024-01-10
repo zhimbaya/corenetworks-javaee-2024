@@ -1,0 +1,24 @@
+package principal;
+
+public class Ajedrez {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int filas;
+		int columnas;
+		
+		for (columnas=1; columnas<=5; columnas++) {
+
+		}
+		
+		for (filas=1; filas<=5; filas++) {
+			System.out.print("██");
+			System.out.print("  ");
+		}
+		
+		
+
+	}
+
+}

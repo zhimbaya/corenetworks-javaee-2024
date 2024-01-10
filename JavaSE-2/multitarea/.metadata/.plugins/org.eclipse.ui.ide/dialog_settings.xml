@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="true"/>
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="\\a13e100\Compartida_Tarde\ejercicios\multitarea\repositorio_git\23_cliente_pedidos_con_envio"/>
+			<item value="\\a13e100\Compartida_Tarde\ejercicios\multitarea\23_cliente_pedidos_con_envio"/>
+			<item value="\\a13e100\Compartida_Tarde\ejercicios\multitarea\repositorio_git\22_servidor_pedidos_con_altas"/>
+			<item value="\\a13e100\Compartida_Tarde\ejercicios\multitarea\21_cliente_pedidos_sockets"/>
+			<item value="\\a13e100\Compartida_Tarde\ejercicios\multitarea\20_servidor_pedidos"/>
+			<item value="\\a13e100\Compartida_Tarde\ejercicios\multitarea\16_paises"/>
+			<item value="\\a13e100\Compartida_Tarde\ejercicios\graficos\repositorio_git\10_seleccion_empleados"/>
+			<item value="\\a13e100\Compartida_Tarde\ejercicios\multitarea\15_proyecto_covid_eu_servicio"/>
+			<item value="\\a13e100\Compartida_Tarde\ejercicios\multitarea\_16_proyecto_covid_eu"/>
+			<item value="\\a13e100\Compartida_Tarde\ejercicios\multitarea\repositorio_git\14_proyecto_covid_eu"/>
+			<item value="\\a13e100\Compartida_Tarde\ejercicios\multitarea\repositorio_git\13_calculos_con_completablefuture"/>
+			<item value="\\a13e100\Compartida_Tarde\ejercicios\multitarea\repositorio_git\12_calculos_con_callable"/>
+			<item value="\\a13e100\Compartida_Tarde\ejercicios\multitarea\repositorio_git\11_recursos_compartidos_hilos_executorservice"/>
+			<item value="\\a13e100\Compartida_Tarde\ejercicios\multitarea\repositorio_git\10_pedidos_tiendas_executorservice"/>
+			<item value="\\a13e100\Compartida_Tarde\ejercicios\multitarea\repositorio_git\09_tabla_numeros_executorservice"/>
+			<item value="\\a13e100\Compartida_Tarde\ejercicios\multitarea\repositorio_git\08_ejemplo_multitarea_executorservice"/>
+			<item value="\\a13e100\Compartida_Tarde\ejercicios\multitarea\repositorio_git\07_recursos_compartidos_hilos_copyonarraylist"/>
+			<item value="\\a13e100\Compartida_Tarde\ejercicios\multitarea\repositorio_git\06_recursos_compartidos_hilos"/>
+			<item value="\\a13e100\Compartida_Tarde\ejercicios\multitarea\repositorio_git\05_pedidos_tiendas"/>
+			<item value="\\a13e100\Compartida_Tarde\ejercicios\multitarea\repositorio_git\04_gestor_cursos_jpa_reloj"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+	<section name="CleanDialogSettings">
+		<item key="TOGGLE_SELECTED" value="false"/>
+		<item key="DIALOG_WIDTH" value="500"/>
+		<item key="DIALOG_HEIGHT" value="694"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="676"/>
+		<item key="DIALOG_Y_ORIGIN" value="341"/>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
+</section>

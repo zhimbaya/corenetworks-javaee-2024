@@ -1,0 +1,34 @@
+package service;
+import java.util.ArrayList;
+import model.Ciudad;
+
+
+		public class CiudadService {
+			Ciudad ciudad = new Ciudad();
+			ArrayList<Ciudad> ciudadeslist = new ArrayList<>();
+			ArrayList list = new ArrayList();
+			
+			public boolean introducir (String nombre,String pais, int habitantes) {
+				ciudadeslist.add(ciudad);
+				return false;
+			}
+			public ArrayList<Ciudad> todos (String pais) {
+				
+				for (Ciudad c : ciudadeslist) {
+					if (c.getPais().equals(pais)) {
+						list.add(c.getNombre());
+					}
+				}
+				return list;
+			}
+			public ArrayList<Ciudad> todos () {
+				for (Ciudad c : ciudadeslist) {
+						list.add(c.getNombre());
+					
+				}
+				return list;
+			}
+			
+	
+	
+		}

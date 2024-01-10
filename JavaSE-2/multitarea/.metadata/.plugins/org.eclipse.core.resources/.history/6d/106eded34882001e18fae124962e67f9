@@ -1,0 +1,49 @@
+package service;
+
+import static service.locator.ItemsLocator.getJsonStream;
+import static utilities.Utilidades.convertirTextoFecha;
+import java.util.List;
+import java.util.stream.Collectors;
+
+import model.Item;
+
+public class ItemsServiceImpl implements ItemsService {
+	
+	@Override
+	public List<String> continente() {
+		return getJsonStream()//Stream<Item>
+				.map(it->it.getRegion())//Stream<String>
+				.distinct()
+				.toList();
+	}
+	
+	@Override
+	public List<Integer> poblacionPais(String pais) {
+		return getJsonStream()
+				.filter(it->it.getNombrePais().equals(pais))
+				.map(it->it.getPopulation())
+				.toList();
+				
+	}
+	
+	@Override
+	public List<String> capital(String pais) {
+		return getJsonStream()
+				.filter(it->it.getNombrePais().equals(pais))
+				.map(it->it.getNombreCapital())
+				.toList();
+				
+	}
+	@Override
+	public List<String> pais(String pais) {
+		return getJsonStream()
+				.filter(it->it.getNombrePais().equals(pais))
+				.map(it->it.getNombrePais())
+				.toList();
+				
+	}
+
+
+
+
+}

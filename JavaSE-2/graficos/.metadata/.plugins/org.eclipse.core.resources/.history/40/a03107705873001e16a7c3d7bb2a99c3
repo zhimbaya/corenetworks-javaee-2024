@@ -1,0 +1,10 @@
+package model;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Setter
+@Getter
+
+public class User {
+
+}

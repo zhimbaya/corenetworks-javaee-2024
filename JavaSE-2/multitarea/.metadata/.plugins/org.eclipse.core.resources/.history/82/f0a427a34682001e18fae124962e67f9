@@ -1,0 +1,14 @@
+package service;
+
+import java.util.List;
+
+import model.Item;
+
+public interface ItemsService {
+	List<String> paises();
+	double incidenciaPais(String pais);
+	int totalAcumulados();
+	List<Integer> poblacionPais(String pais);
+	List<String> capital(String pais);
+	List<String> pais(String pais);
+}

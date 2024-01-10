@@ -1,0 +1,15 @@
+package principal;
+
+import java.io.IOException;
+import java.net.Socket;
+
+public class ClienteSaludo {
+
+	public static void main(String[] args) throws IOException {
+		// Crear objeto socket
+		Socket socket=new Socket("localhost",8000);
+		//entrada salida
+
+	}
+
+}

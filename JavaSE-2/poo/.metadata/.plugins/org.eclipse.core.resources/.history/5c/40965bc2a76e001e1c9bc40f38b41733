@@ -1,0 +1,31 @@
+package principal;
+
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class Test12ColectorColecciones {
+
+	public static void main(String[] args) {
+		List<Integer> nums=List.of(6,11,-4,8,-1,10,8,10,6,8,-9);
+		//crear una lista con todos los numeros positivos 
+		//sin incluir repetidos
+		
+		List<Integer> positivos=nums.stream() //Stream<Integer>
+				.distinct()
+				.filter(n->n>0) //Stream<Integer> solo postivos
+				//.collect(Collectors.toList())
+				.toList(); //ojo solo desde Java 16
+				System.out.println(positivos);
+				
+		//crear una lista con todos los numeros positivos 
+		//sin incluir repetidos
+				Set<Integer> pos=nums.stream()
+						.filter(n->n>0)
+						.collect(Collectors.toSet());
+				
+		
+		
+
+	}
+
+}

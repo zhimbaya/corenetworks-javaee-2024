@@ -1,0 +1,12 @@
+package principal;
+
+import java.util.HashSet;
+
+public class Loteria {
+
+	public static void main(String[] args) {
+		HashSet<Integer> boleto = new HashSet<>();
+		
+	}
+
+}

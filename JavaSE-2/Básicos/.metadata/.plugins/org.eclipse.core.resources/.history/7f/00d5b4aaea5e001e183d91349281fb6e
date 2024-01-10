@@ -1,0 +1,12 @@
+package service;
+
+import java.util.ArrayList;
+
+import model.Ciudad;
+
+public class CiudadService {
+	Ciudad ciudad = new Ciudad();
+	ArraayList<String> list = new ArrayList<>();
+	
+	
+}

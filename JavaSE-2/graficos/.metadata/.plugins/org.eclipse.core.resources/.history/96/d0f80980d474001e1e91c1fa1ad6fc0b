@@ -1,0 +1,18 @@
+package service;
+
+import java.util.List;
+
+import model.Empleado;
+
+public class EmpleadosService {
+	
+	
+	public List<Empleado> empleados() {
+	
+		return getEmpleados()
+				.toLis();
+				
+		
+	}
+
+}

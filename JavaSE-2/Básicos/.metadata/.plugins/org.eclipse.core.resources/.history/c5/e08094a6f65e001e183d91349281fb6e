@@ -1,0 +1,34 @@
+package testing;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+
+class TestCiudadService {
+
+	@BeforeAll
+	static void setUpBeforeClass() throws Exception {
+	}
+
+	@Test
+	void testIntroducir() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testTodos() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testPoblacion() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testEliminar() {
+		fail("Not yet implemented");
+	}
+
+}

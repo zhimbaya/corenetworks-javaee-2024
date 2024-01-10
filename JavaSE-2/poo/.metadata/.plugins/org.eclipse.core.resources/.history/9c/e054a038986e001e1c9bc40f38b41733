@@ -1,0 +1,27 @@
+package principal;
+
+import java.util.List;
+import java.util.Random;
+import java.util.stream.Stream;
+
+public class Loteria {
+
+	public static void main(String[] args) {
+		List<Integer> nums = List.of(6,11,-4,8,5,1,10,-4,27,4,-5,41,11);
+		
+		Stream.generate(new Random()::nextInt)
+		limit(5).forEach(System.out::println);
+		
+		nums.stream()
+		
+		.filter(n->n>0)
+		.distinct()
+		.sorted((a,b)->a-b)
+		.limit(6)
+		.forEach(n->System.out.print(n + ","));
+		
+		
+
+	}
+
+}

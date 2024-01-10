@@ -1,0 +1,36 @@
+package principal;
+
+import java.io.IOException;
+import java.util.List;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+import service.ItemsService;
+import service.ItemsServiceFactory;
+
+public class Lanzador {
+
+	public static void main(String[] args) throws IOException {
+		ExecutorService executor=Executors.newCachedThreadPool();
+		ItemsService itemsService=ItemsServiceFactory.getItemService();
+		
+		List<String> paises=itemsService.continente();
+		System.out.println("--- paises" + paises);
+		paises.forEach(p->{
+	
+			executor.submit(()->	
+						System.out.println("La población de "+p+" es: "+itemsService.pais(p)+","+itemsService.capital(p)+","+itemsService.poblacionPais(p)));
+			try {
+				Thread.sleep(50);
+			} catch (InterruptedException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}	
+		}
+				);		
+		executor.shutdown();
+		System.in.read();
+	}
+
+}

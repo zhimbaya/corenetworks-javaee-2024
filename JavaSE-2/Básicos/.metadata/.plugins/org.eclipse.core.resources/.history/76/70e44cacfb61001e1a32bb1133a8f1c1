@@ -1,0 +1,27 @@
+package principal;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Date d1 = new Date();
+		Date d2 = new Date(2337484972132l);
+		if (d1.before(d2)) {
+			System.out.print("La fecha más antigua es: " + d1);
+			System.out.print("\nLa fecha más nueva es; " + d2);
+		}else {
+			System.out.print("La fecha más moderna es: " + d2);
+			System.out.print("\nLa fecha más vieja es: " + d1);
+		}
+		//formatear fechas
+		SimpleDateFormat fr = new SimpleDateFormat("dd/mm/yyyy");
+		String fr = fr.formatted(d1);
+		System.out.print("\nLa fecha más vieja es: " + d1);
+		
+		
+	
+	}
+
+}

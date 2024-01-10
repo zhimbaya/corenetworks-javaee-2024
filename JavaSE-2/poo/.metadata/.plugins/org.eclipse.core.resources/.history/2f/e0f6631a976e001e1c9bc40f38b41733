@@ -1,0 +1,22 @@
+package principal;
+
+import java.util.Comparator;
+import java.util.List;
+
+public class Loteria {
+
+	public static void main(String[] args) {
+		List<Integer> nums = List.of(6,11,-4,8,5,1,10,-4,27,4,-5,41,11);
+	
+		nums.stream()
+		.filter(n->n>0)
+		.distinct()
+		.sorted((a,b)->a-b)
+		.limit(6)
+		.forEach(n->System.out.println(n + ","));
+		
+		
+
+	}
+
+}

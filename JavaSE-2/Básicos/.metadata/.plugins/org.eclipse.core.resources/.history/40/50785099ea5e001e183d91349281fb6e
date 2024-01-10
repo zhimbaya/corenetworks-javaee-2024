@@ -1,0 +1,8 @@
+package service;
+
+import model.Ciudad;
+
+public class CiudadService {
+	Ciudad ciudad = new Ciudad();
+	
+}

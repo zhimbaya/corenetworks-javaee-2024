@@ -1,0 +1,5 @@
+package modelo;
+
+public record Cesta(String producto, int precio, LocalDate fechaPedido) {
+
+}

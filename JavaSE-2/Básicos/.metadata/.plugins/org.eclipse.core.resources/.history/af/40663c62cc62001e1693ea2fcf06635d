@@ -1,0 +1,12 @@
+package modelo;
+
+import java.time.LocalDate;
+import java.util.Date;
+
+public class Cesta {
+	
+	public Cesta(String producto, int precio, LocalDate fechaPedido) {
+		
+	}
+	}
+		

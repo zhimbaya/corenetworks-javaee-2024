@@ -1,0 +1,20 @@
+package principal;
+
+import java.util.Date;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Date d1 = new Date();
+		Date d2 = new Date(233748497);
+		if (d1.before(d2)) {
+			System.out.print("La fecha más antigua es: " + d1);
+			System.out.print("La fecha más nueva es; " + d2);
+		}else {
+			System.out.print("La fecha más antigua es: " + d2);
+			System.out.print("La fecha más antigua es: " + d1);
+		}
+	
+	}
+
+}

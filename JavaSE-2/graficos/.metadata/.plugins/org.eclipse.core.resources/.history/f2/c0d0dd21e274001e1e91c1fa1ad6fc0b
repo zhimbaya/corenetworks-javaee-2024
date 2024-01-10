@@ -1,0 +1,36 @@
+package view.adapters;
+
+import java.util.List;
+
+import javax.swing.DefaultComboBoxModel;
+
+import model.Empleado;
+import service.EmpleadosService;
+
+public class ComboBoxEmpleadosModel extends DefaultComboBoxModel {
+	
+	List<Empleado> empleados;
+	List<String>empleadosDept;
+
+	public ComboBoxEmpleadosModel() {
+		empleados=new EmpleadosService().empleados();
+	}
+	public ComboBoxEmpleadosModel(String ) {
+		empleadosDept =
+	}
+
+	@Override
+	public int getSize() {
+		return empleados.size();
+	}
+
+	@Override
+	public Object getElementAt(int index) {
+		// TODO Auto-generated method stub
+		return empleados.get(index);
+	}
+
+
+
+	
+}

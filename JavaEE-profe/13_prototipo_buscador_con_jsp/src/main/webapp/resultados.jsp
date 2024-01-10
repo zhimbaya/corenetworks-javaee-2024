@@ -8,11 +8,13 @@
 </head>
 <body>
 <%List<Resultado> resultados=(List<Resultado>)request.getAttribute("paginas"); 
-	for(Resultado r:resultados){%>
-		<h2><a href="<%=r.getUrl()%>"><%=r.getUrl()%></a></h2>
-		<h4><%=r.getDescripcion() %></h4>
-		<hr>
-	<%}%>
+	if(resultados!=null){
+		for(Resultado r:resultados){%>
+			<h2><a href="<%=r.getUrl()%>"><%=r.getUrl()%></a></h2>
+			<h4><%=r.getDescripcion() %></h4>
+			<hr>
+		<%}%>
+	<%} %>
 	<br>
 	<a href="buscar.html">Volver</a>
 </body>

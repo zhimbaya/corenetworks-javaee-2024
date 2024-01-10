@@ -1,0 +1,24 @@
+package principal;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+import service.LginService;
+
+public class view {
+
+	public static void main(String[] args) {
+		
+		LginService login = new LginService();
+		JFrame frame = new JFrame("Login");
+		frame.setSize(300, 150);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+		JPanel panel = new JPanel();
+		frame.getContentPane().add(panel);
+		login.placeComponents(panel);
+		frame.setVisible(true);
+
+	}
+
+}

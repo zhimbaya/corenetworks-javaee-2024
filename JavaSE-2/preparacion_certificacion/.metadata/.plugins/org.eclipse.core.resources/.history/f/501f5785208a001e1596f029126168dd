@@ -1,0 +1,27 @@
+package principal;
+
+public class Ajedrez {
+
+	public static void main(String[] args) {			
+		int filas;
+		int columnas;
+		static int [] p=new int[9];
+		for (columnas=1; columnas<=5; columnas++) {
+			for (filas=1; filas<=5; filas++) {
+				System.out.print("██");
+				System.out.print("  "); 
+			}
+				System.out.println("");
+			for (filas=1; filas<=5; filas++) {
+				System.out.print("  ");
+				System.out.print("██");
+			}
+				System.out.println("");
+		} 
+		int [] n=new int[9];   
+		System.out.println(n[0]);
+	System.out.println(p[0]);
+		
+	}
+	
+}

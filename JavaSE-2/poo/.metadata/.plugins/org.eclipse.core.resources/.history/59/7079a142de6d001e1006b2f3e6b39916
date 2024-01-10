@@ -1,0 +1,19 @@
+package principal;
+
+import java.util.Arrays;
+
+import javax.annotation.processing.SupportedSourceVersion;
+
+public class Test8Map {
+
+	public static void main(String[] args) {
+		String nombres="leche,vino,atun,patatas,mantequilla,ajo,arroz,lechuga";
+		//mostrar las longitudes de cada texto de menor a mayor
+
+		Arrays.stream(nombres.split("(, -)")) //tenemos una cadena de Stream<string>
+		.map(s->s.length()) //se convierte en Stream<Integer>
+		.sorted()
+		.forEach(n->System.out.println(n));
+	}
+
+}

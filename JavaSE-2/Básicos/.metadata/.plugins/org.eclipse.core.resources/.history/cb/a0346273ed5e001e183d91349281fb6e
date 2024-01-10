@@ -1,0 +1,12 @@
+package principal;
+
+import java.util.Scanner;
+
+public class Ciudades {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		Scanner scTetx = new Scanner(System.in); 
+	}
+
+}

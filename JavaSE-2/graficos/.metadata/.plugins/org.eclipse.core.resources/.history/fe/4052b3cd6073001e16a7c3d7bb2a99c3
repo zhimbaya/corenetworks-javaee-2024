@@ -1,0 +1,38 @@
+package service;
+
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.stream.Stream;
+
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
+
+import com.google.gson.Gson;
+
+import model.User;
+
+public class LginService {
+	
+	private static Stream<User> getUser(){
+		String ruta="c:\\temp\\login.json";
+		Gson gson=new Gson();
+		try(FileReader reader=new FileReader(ruta);){
+			User[] users=gson.fromJson(reader, User[].class);
+			return Arrays.stream(users);
+		}
+		catch(IOException ex) {
+			ex.printStackTrace();
+			return Stream.empty();
+		}
+	}
+
+	public boolean autenticar(User user) {
+	
+		return getUser().anyMatch(a->a.getUsuario().equals(user.getUsuario())&&a.getContraseña().equals(user.getContraseña()));
+			
+	}
+}

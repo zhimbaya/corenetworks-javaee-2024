@@ -1,0 +1,24 @@
+package service;
+
+import java.util.ArrayList;
+
+public class NotasService {
+	
+	
+	
+	public void guardarNota(double nota) {
+				
+	}
+	public void eliminarNota(int pos) {
+		
+	}
+	public double media () {
+		
+	}
+	public int aprobados() {
+		
+	}
+	public ArrayList<Double> notas() {
+		
+	}
+}

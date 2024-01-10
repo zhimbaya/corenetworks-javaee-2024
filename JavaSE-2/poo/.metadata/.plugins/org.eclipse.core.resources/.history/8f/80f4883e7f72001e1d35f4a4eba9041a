@@ -1,0 +1,63 @@
+package service;
+
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.time.LocalDate;
+import java.util.List;
+import java.util.Optional;
+import java.util.stream.Stream;
+
+import model.Empleado;
+
+
+public class EmpleadoService {
+	
+	String dir="c:\\temp\\empleados.json";
+	Path path;
+	
+	public EmpleadoService() {
+	File file=new File(dir);
+	if(!file.exists()) {
+		try {
+			file.createNewFile();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	path=Path.of(dir);
+}
+	private Stream<Empleado>getEmpleado() {
+		try {
+			return Files.lines(path)
+			.map(s->new Empleado(s.split(",")[0],
+					(s.split(",")[1]),
+					Double.parseDouble(s.split(",")[2]),
+					(s.split(",")[3])));
+			
+		}catch (IOException e) {
+			e.printStackTrace();
+			return Stream.empty();
+		}
+	}
+	
+	public List<Empleado> empleadosPorDepartamento(String departamento){
+		return getEmpleado()
+				.filter(n->n.getDepartamento().equals(departamento))
+				.toList();
+							
+	}
+	public Empleado empleadoMayorSalario() {
+		return getEmpleado()
+				.max((a,b)->Double.compare(a.getSalario(),b.getSalario()))
+				.orElse(null);
+	}
+	public Empleado buscarEmpleado(String email) {
+		return getEmpleado()
+				.filter(n->n.getEmail().equals(email))
+				.findFirst();
+	}
+
+}

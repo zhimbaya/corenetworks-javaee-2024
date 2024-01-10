@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;09_ejemplo_interface/src/clases&apos;&#x0D;&#x0A;- Original project: &apos;02_ejemplo_herncia&apos;&#x0D;&#x0A;- Destination element: &apos;09_ejemplo_interface/src/clases&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     principal.Punto.java&#x0D;&#x0A;     principal.Punto3D.java" description="Copy compilation units" destination="=09_ejemplo_interface/src&lt;clases" element1="/src&lt;principal{Punto.java" element2="/src&lt;principal{Punto3D.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1696957538340" units="2" version="1.0"/>
+</session>

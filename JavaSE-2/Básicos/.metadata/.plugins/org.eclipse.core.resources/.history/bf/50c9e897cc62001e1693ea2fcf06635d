@@ -1,0 +1,9 @@
+package modelo;
+
+public class Cesta {
+	
+	public String Pedido (producto, int precio, LocalDate fechaPedido) {
+		
+	}
+
+}

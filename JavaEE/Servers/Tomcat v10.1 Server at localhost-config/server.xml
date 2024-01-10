@@ -140,7 +140,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="25_cursos_web_mvc" path="/25_cursos_web_mvc" reloadable="true" source="org.eclipse.jst.jee.server:25_cursos_web_mvc"/><Context docBase="24_gestor_productos_mvc" path="/22_gestor_productos_jstl" reloadable="true" source="org.eclipse.jst.jee.server:24_gestor_productos_mvc"/><Context docBase="_22_gestor_productos_jst" path="/_22_gestor_productos_jst" reloadable="true" source="org.eclipse.jst.jee.server:_22_gestor_productos_jst"/><Context docBase="23_tabla_numero_jstl" path="/23_tabla_numero_jstl" reloadable="true" source="org.eclipse.jst.jee.server:23_tabla_numero_jstl"/><Context docBase="19_autenticacion_usuarios_cookie" path="/19_autenticacion_usuarios_cookie" reloadable="true" source="org.eclipse.jst.jee.server:19_autenticacion_usuarios_cookie"/></Host>
+      <Context docBase="25_cursos_web_mvc" path="/25_cursos_web_mvc" reloadable="true" source="org.eclipse.jst.jee.server:25_cursos_web_mvc"/><Context docBase="26_cursos_web_login_filtro" path="/26_cursos_web_login_filtro" reloadable="true" source="org.eclipse.jst.jee.server:26_cursos_web_login_filtro"/></Host>
     </Engine>
   </Service>
 </Server>

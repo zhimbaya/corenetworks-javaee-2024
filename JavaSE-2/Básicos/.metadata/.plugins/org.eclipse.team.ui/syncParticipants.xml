@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<syncparticipants>
+<participant displayName="Git (17_pruebas_st...jemplo_hashset)" id="org.eclipse.egit.ui.modelCompareParticipant" secondary_id="1696603301337">
+<data forceFetch="false" root="false">
+<org.eclipse.team.ui.MODEL_PARTICIPANT_SETTINGS org.eclipse.team.ui.MODEL_PARTICIPANT_DESCRIPTION="17_pruebas_st...jemplo_hashset" startupAction="none">
+<org.eclipse.team.ui.MODEL_PARTICIPANT_REFRESH_SCHEDULE org.eclipse.team.ui.CTX_REFRESHSCHEDULE_ENABLED="false" org.eclipse.team.ui.CTX_REFRESHSCHEDULE_INTERVAL="3600" org.eclipse.team.ui.CTX_REFRESHSCHEDULE_RUNONCE="false"/>
+<org.eclipse.team.ui.MODEL_PARTICIPANT_MAPPINGS modelProviderId="org.eclipse.core.resources.modelProvider">
+<mappings>
+<resources resourcePath="/17_pruebas_string" resourceType="4"/>
+<resources resourcePath="/28_notas_completo" resourceType="4"/>
+<resources resourcePath="/31_pruebas_tabla" resourceType="4"/>
+<resources resourcePath="/33_pruebas_javabean" resourceType="4"/>
+<resources resourcePath="/43_gestion_pedidos_localdate_record" resourceType="4"/>
+<resources resourcePath="/41_gestion_pedidos" resourceType="4"/>
+<resources resourcePath="/32_agenda_contactos" resourceType="4"/>
+<resources resourcePath="/42_gestion_pedidos_localdate" resourceType="4"/>
+<resources resourcePath="/35_gestion_ciudades" resourceType="4"/>
+<resources resourcePath="/47_gestion_pedidos_fichero" resourceType="4"/>
+<resources resourcePath="/java2023_basicos" resourceType="4"/>
+<resources resourcePath="/36_ejemplo_hashset" resourceType="4"/>
+</mappings>
+</org.eclipse.team.ui.MODEL_PARTICIPANT_MAPPINGS>
+</org.eclipse.team.ui.MODEL_PARTICIPANT_SETTINGS>
+<gitSynchronizeData container="C:/Users/tarde/git/java2023_basicos/43_gestion_pedidos_localdate_record" dstRev="refs/heads/master" inludeLocal="true" srcRev="HEAD"/>
+</data>
+</participant>
+</syncparticipants>

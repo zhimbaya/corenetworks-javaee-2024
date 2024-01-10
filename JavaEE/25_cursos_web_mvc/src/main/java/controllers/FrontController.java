@@ -27,6 +27,9 @@ public class FrontController extends HttpServlet {
 			request.getRequestDispatcher("EliminarController").include(request, response);
 			urlView = "menu.html";
 			break;
+		case "doLogin":
+			urlView = (Boolean) request.getAttribute("autenticado") ? "menu.html" : "error.jsp";
+			break;
 		case "toNuevo":
 			urlView = "nuevo.html";
 			break;
@@ -38,6 +41,9 @@ public class FrontController extends HttpServlet {
 			break;
 		case "toMenu":
 			urlView = "menu.html";
+			break;
+		case "toLogin":
+			urlView = "login.html";
 			break;
 		default:
 			break;

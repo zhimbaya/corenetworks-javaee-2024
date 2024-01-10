@@ -1,0 +1,67 @@
+package view.adapters;
+
+import java.util.List;
+
+import javax.swing.table.DefaultTableModel;
+
+import model.Empleado;
+import service.EmpleadosService;
+
+public class TablaEmpleadosModel extends DefaultTableModel {
+
+	List<Empleado> empleados;
+	final int COLS=4;
+	public TablaEmpleadosModel() {
+		empleados=new EmpleadosService().empleados();
+	}
+
+	@Override
+	public int getRowCount() {
+		return empleados.size();
+	}
+
+	@Override
+	public int getColumnCount() {
+		return COLS;
+	}
+
+	@Override
+	public String getColumnName(int column) {
+		/*Java 17
+		return switch(column) {
+		case 0->"Nombre";
+		case 1->"Email";
+		case 2->"Salario";
+		case 3->"Departamento";
+		default->"Indeterminada";
+		};*/
+		 switch(column) {
+		case 0:
+			return "Nombre";
+		case 1:
+			return "Email";
+		case 2:
+			return"Salario";
+		case 3:
+			return "Departamento";
+			default:
+				return Indeterminada;
+		};
+	}
+
+	@Override
+	public Object getValueAt(int row, int column) {
+		// TODO Auto-generated method stub
+		return super.getValueAt(row, column);
+	}
+
+	@Override
+	public Class<?> getColumnClass(int columnIndex) {
+		// TODO Auto-generated method stub
+		return super.getColumnClass(columnIndex);
+	}
+	
+	
+	
+	
+}

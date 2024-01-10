@@ -1,0 +1,53 @@
+package testing;
+
+import static org.junit.jupiter.api.Assertions.fail;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import service.CiudadesService;
+
+class TestCiudadesService {
+	CiudadesService service;
+
+	@BeforeEach
+	void setUp() throws Exception {
+		service=new CiudadesService();
+		service.nuevaCiudad("c1", "p1",100_000, 23.5);
+		service.nuevaCiudad("c2", "p1",100_000, 23.5);
+		service.nuevaCiudad("c3", "p1",100_400, 23.5);
+		service.nuevaCiudad("c4", "p1",140_000, 23.5);
+		service.nuevaCiudad("c5", "p1",150_000, 23.5);
+	}
+
+	@Test
+	void testNuevaCiudad() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testTotalCiudadesPais() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testTotalPias() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testExisteCiudadTempInf() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testCiudadPorNombre() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testCiudadMasPoblada() {
+		fail("Not yet implemented");
+	}
+
+}

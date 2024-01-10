@@ -1,0 +1,100 @@
+package service;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+
+import modelo.Ciudad;
+
+
+public class CiudadesService {
+	List<Ciudad>ciudades=new ArrayList<>();
+	
+	//recibe los datos de la ciudad la agrega, no piede haber dos ciudades 
+	//con el mosmo nombre y pais. Devuelve boolean si añade o no
+	public boolean nuevaCiudad(String nombre, String pais, long habitantes, double temperatura) {
+		if(ciudades.stream().noneMatch(c->c.getNombre().equals(nombre)&&c.getPais().equals(pais)))
+				ciudades.add(new Ciudad(nombre, pais, habitantes, temperatura));
+		return true;
+	}
+	
+	//a partir de un pais, devuelve el total de cuidades registradas de ese pais
+	public int totalCiudadesPais(String pais) {
+		return (int)ciudades.stream()
+				.filter(c->c.getPais().equals(pais))
+				.count();
+		
+	}
+	
+	//devuelve el total de paises registrados
+	public int totalPais() {
+		return (int)ciudades.stream()
+				.map(c->c.getPais())
+				.distinct()
+				.count();
+		
+	}
+	
+	// a partir de una temperaura, indica si hay alguna cuidad 
+	//con temperatura media inferior a ese valor
+	public boolean existeCiudadTempInf(double temp) {
+		return ciudades.stream().anyMatch(c->c.getTemperaturaMedia()<temp);
+	}
+	
+	//metodo que devuelva los datos del pais cuyo nombre se recibe como parametro
+	
+	public Ciudad ciudadPorNombre(String nombre) {
+		return ciudades.stream()
+				.filter(c->c.getNombre().equals(nombre))
+				.findFirst()
+				.orElse(null);		
+	}
+	//datos de la ciudad mas poblada
+	public Ciudad ciudadMasPoblada() {
+		return	ciudades.stream()
+				.max((a,b)->Long.compare(a.getHabitantes(), b.getHabitantes()))
+				.orElse(null);			
+	}
+	
+	//dado un pais, media de habitantes de sus ciudades
+		public double mediaHabitantesPorPais(String pais) {
+			return ciudades.stream()
+					.filter(c->c.getPais().equals(pais))//Stream<Ciudad>
+					.mapToLong(c->c.getHabitantes()) //LongStream
+					.average()
+					.orElse(0);
+		}
+	 
+	//temperatura media más alta de entre todas las ciudades
+		public double temperaturaMasAlta() {
+			return ciudades.stream()
+					.mapToDouble(c->c.getTemperaturaMedia())
+					.max()
+					.orElse(0);
+		}
+		//a partir de un pais devuelve la lista de ciudades de dicho pais
+		public List<Ciudad> ciudadesPorPais(String pais) {
+			return ciudades.stream()
+					.filter(c->c.getPais().equals(pais))//Stream<Ciudad>
+					.collect(Collectors.toList());
+					
+		}
+		
+		//duvuelve una lista com nombres delos paises
+		
+		public List<String> nombresPaises() {
+			return ciudades.stream()
+			.map(c->c.getPais())
+			.distinct()
+			.collect(Collectors.toList());
+		}
+		
+		List<String> empleados=List.of("112F,Angel","98Q,Ana","223R,Esteban");
+		//Genera una tabla, donde el codigo es la clave y el nombre el valor
+		Map<String,String> emps=empleados.stream() 
+				.collect(Collectors.toMap(s->s.split("-")[0],s->s.split("-")[1]));
+							
+				
+
+}

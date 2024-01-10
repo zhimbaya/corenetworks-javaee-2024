@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;service.agendaService&apos; to &apos;AgendaService&apos;&#x0D;&#x0A;- Original project: &apos;32_Agenda&apos;&#x0D;&#x0A;- Original element: &apos;service.agendaService&apos;&#x0D;&#x0A;- Renamed element: &apos;service.AgendaService&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;agendaService&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;service{agendaService.java[agendaService" matchStrategy="1" name="AgendaService" qualified="false" references="true" similarDeclarations="false" stamp="1695923754407" textual="false" version="1.0"/>
+</session>

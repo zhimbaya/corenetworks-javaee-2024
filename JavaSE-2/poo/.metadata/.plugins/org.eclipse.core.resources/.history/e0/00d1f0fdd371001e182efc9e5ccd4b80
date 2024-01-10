@@ -1,0 +1,27 @@
+package principal;
+
+import java.io.FileReader;
+import java.io.IOException;
+
+import com.google.gson.Gson;
+
+
+public class TestEmpleados {
+
+	public static void main(String[] args) {
+		String ruta="c:\\temp\\empleados.json";
+		Gson gson=new Gson();
+		try (FileReader reader= new FileReader(ruta);) {
+			Empleados[] empleados=gson.fromJson(reader, Empleados[].class);
+			for(Empleados pedido : pedidos) {
+				System.out.println("Producto: " + pedido.getProducto());
+				System.out.println("FechaPedido: " + pedido.getFechaPedido());
+				System.out.println("Precio: " + pedido.getPrecio());
+			}
+		}catch (IOException e) {
+			e.printStackTrace();
+		}
+
+	}
+
+}

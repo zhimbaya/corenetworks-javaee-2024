@@ -1,0 +1,16 @@
+package service;
+
+public class EmpleadoService {
+	
+	public List<Empleado> empleadosPorDepartamento(String departamento){
+		
+	}
+	public Empleado empleadoMayorSalario() {
+		
+	}
+	public Empleado buscarEmpleado(String email) {
+		
+	}
+	
+
+}

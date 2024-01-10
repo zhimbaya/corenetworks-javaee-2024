@@ -1,0 +1,5 @@
+package serializacion;
+
+public interface JsonDeserialization<T> {
+
+}

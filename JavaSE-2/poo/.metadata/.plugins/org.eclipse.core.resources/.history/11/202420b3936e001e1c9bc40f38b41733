@@ -1,0 +1,13 @@
+package principal;
+
+public class Test11FlatMap {
+
+	public static void main(String[] args) {
+		String[][] pedidos= {{"azucar","agua","vino","azucar"},
+				{"cerveza","pollo","jamon","vino"},
+				{"agua","aceite","pan","lechuga"}};		
+	
+
+	}
+
+}

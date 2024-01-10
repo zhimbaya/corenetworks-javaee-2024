@@ -1,0 +1,32 @@
+package service;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+
+public class NotasService {
+	String dir = "c\\temp\\notas.txt";
+	
+	
+	public void guardarNota(double nota) {
+				try (FileReader f = new FileReader("c:\\temp\\dias.txt");
+				BufferedReader bf = new BufferedReader(f);) {
+					
+				}catch(IOException ex) {
+					ex.printStackTrace()
+				}
+	}
+	public void eliminarNota(int pos) {
+		//no se hace de momento
+	}
+	public double media () {
+		
+	}
+	public int aprobados() {
+		
+	}
+	public ArrayList<Double> notas() {
+		
+	}
+}

@@ -1,0 +1,15 @@
+package proncipal;
+
+import java.nio.file.Files;
+
+public class TestLectura {
+
+	public static void main(String[] args) {
+		String dir="c:\\temp\\productos.txt";
+		Path path=Path.of(dir);
+		Files.lines(path) //Stream<String>
+		.forEach(System.out::println);
+
+	}
+
+}

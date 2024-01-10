@@ -1,0 +1,9 @@
+package model;
+
+public class Empleados {
+
+	private String nombre;
+	private String	email;
+	private Integer salario;
+	private String departamento;
+}

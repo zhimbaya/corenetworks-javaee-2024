@@ -1,0 +1,3 @@
+module ModuloAritmetico {
+	exports service;
+}

@@ -1,0 +1,70 @@
+package service;
+
+import java.io.BufferedReader;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.PrintStream;
+import java.util.ArrayList;
+
+public class NotasService {
+	String dir = "c:\\temp\\notas.txt";
+	
+	public void guardarNota(double nota) {
+				try (FileOutputStream fos = new FileOutputStream(dir,true);
+						PrintStream out = new PrintStream(fos)) {
+					out.println(nota);
+				}catch(IOException ex) {
+					ex.printStackTrace();
+				}
+	}
+	public void eliminarNota(int pos) {
+		//no se hace de momento
+	}
+	public double media () {
+		double res=0;
+		ArrayList<Double> notas =new ArrayList<Double>();
+		try (FileReader f = new FileReader(dir);
+				BufferedReader bf = new BufferedReader(f);){
+			double nota =Integer.parseInt(bf.readLine());
+			while (nota > 0 ) {
+				notas.add(nota);
+				for(double n : notas) {
+					res+=n;
+				}
+			}			
+		}catch (IOException ex) {
+			ex.printStackTrace();
+		}
+		return res;
+	}
+	public int aprobados() {
+		double line=0;
+		int res=0;
+		try (FileReader f = new FileReader(dir);
+				BufferedReader bf = new BufferedReader(f);) {
+			line = Double.parseDouble(bf.readLine());
+			while (line > 0 ) {
+				if(line>=5) {
+					res++;
+				}
+			}
+		}catch (IOException ex) {
+			ex.printStackTrace();
+		}
+		return res;
+	}
+	public ArrayList<Double> notas() {
+		ArrayList<Double> notas =new ArrayList<Double>();
+		try (FileReader f = new FileReader(dir);
+				BufferedReader bf = new BufferedReader(f);){
+			double nota =Integer.parseInt(bf.readLine());
+			while (nota > 0 ) {
+				notas.add(nota);
+			}
+		}catch (IOException ex) {
+			ex.printStackTrace();
+		}
+		return notas;
+	}
+}

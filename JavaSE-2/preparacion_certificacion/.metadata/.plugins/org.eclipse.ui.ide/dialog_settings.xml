@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="true"/>
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="\\a13e100\Compartida_Tarde\ejercicios\preparacion_certificacion\M33_modulo_main"/>
+			<item value="\\a13e100\Compartida_Tarde\ejercicios\preparacion_certificacion\M32_modulo_service"/>
+			<item value="\\a13e100\Compartida_Tarde\ejercicios\preparacion_certificacion\M31_modulo_model"/>
+			<item value="\\a13e100\Compartida_Tarde\ejercicios\multitarea\repositorio_git\22_servidor_pedidos_con_altas"/>
+			<item value="\\a13e100\Compartida_Tarde\ejercicios\preparacion_certificacion\M28_libreria_aritmetica_modular"/>
+			<item value="\\a13e100\Compartida_Tarde\ejercicios\preparacion_certificacion\M30_gestor_cursos_dao_modular"/>
+			<item value="\\a13e100\Compartida_Tarde\ejercicios\preparacion_certificacion\24_cuentas_bancarias_genericos"/>
+			<item value="\\a13e100\Compartida_Tarde\ejercicios\preparacion_certificacion\23_pila_genericos"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+</section>

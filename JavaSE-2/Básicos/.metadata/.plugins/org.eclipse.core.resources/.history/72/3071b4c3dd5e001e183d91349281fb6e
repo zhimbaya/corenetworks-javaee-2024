@@ -1,0 +1,40 @@
+package service;
+import java.util.ArrayList;
+
+import model.Alumno;
+
+public class AgendaService {
+	Alumno alumno = new Alumno();
+	ArrayList<Alumno> alumnos=new ArrayList<Alumno>();
+	
+	public boolean introducir (String email, String nombre,int edad, int telefono) {
+		boolean mensaje = true;
+		
+			if(alumnos.contains(email)) {
+				mensaje= false;
+			}else {
+				alumnos.add(email);
+				alumnos.add(alumno.getNombre());
+				alumnos.add(alumno.getEdad());
+				alumnos.add(alumno.getTelefono());
+				mensaje= true;
+			}
+			return mensaje;
+	}
+	public String verContacto (String email) {
+		return contactos.get(email);
+	}
+	
+	public boolean eliminar (String email) {
+		if (contactos.containsKey(email)) {
+			contactos.remove(email);
+			return true;
+		}
+		return false;
+	}
+	public String[] contactos () {
+		
+		return contactos.values().toArray(new String[0]);
+	}
+
+}

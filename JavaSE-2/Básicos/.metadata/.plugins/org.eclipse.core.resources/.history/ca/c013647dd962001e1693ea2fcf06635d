@@ -1,0 +1,13 @@
+package principal;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+
+public class TestLectura {
+
+	public static void main(String[] args) {
+		FileReader f = new FileReader("c:\\temp\\dias.txt");
+		BufferedReader bf = new BufferedReader(f);
+	}
+
+}

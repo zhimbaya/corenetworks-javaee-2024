@@ -1,0 +1,16 @@
+INDEX VERSION 1.134+C:\Ejercicios\graficos\.metadata\.plugins\org.eclipse.jdt.core
+4129777831.index
+1169626104.index
+2839808401.index
+3455149132.index
+3269371156.index
+1865797976.index
+793405791.index
+194308162.index
+3341477305.index
+2122049760.index
+1346724251.index
+260695685.index
+90975299.index
+697161375.index
+1986155509.index

@@ -1,0 +1,19 @@
+package principal;
+
+import java.util.List;
+
+public class Test6Ordenacion {
+	public static void main(String[] args) {
+		List<Integer> nums = List.of(6,11,-4,8,1,10,-4,27,4,-5,41,11);
+		//cual es el numero mas pequeño
+		System.out.println(;nums.stream()
+		.sorted()
+		.findFirst()
+		.get());
+		
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,7 @@
+package serializacion;
+
+import com.google.gson.JsonDeserializationContext;
+
+public class DeserializadorFecha implements JsonDeserialization<LocalDate>{
+
+}

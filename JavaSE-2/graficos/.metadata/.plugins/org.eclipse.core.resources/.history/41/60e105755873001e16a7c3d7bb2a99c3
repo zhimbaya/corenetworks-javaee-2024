@@ -1,0 +1,12 @@
+package model;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Setter
+@Getter
+
+public class User {
+	
+	private String usuario;
+	private String	contraseña;
+}

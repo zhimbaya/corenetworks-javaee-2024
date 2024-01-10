@@ -1,0 +1,10 @@
+package view.adapters;
+
+import javax.swing.table.DefaultTableModel;
+
+public class TablaEmpleadosModel extends DefaultTableModel {
+
+	List<Empleado> empleado;
+	
+	
+}

@@ -1,0 +1,22 @@
+package view.adapters;
+
+import javax.swing.DefaultComboBoxModel;
+
+public class ComboBoxEmpleadosModel extends DefaultComboBoxModel {
+
+	@Override
+	public int getSize() {
+		
+		return super.getSize();
+	}
+
+	@Override
+	public Object getElementAt(int index) {
+		// TODO Auto-generated method stub
+		return super.getElementAt(index);
+	}
+
+
+
+	
+}

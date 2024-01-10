@@ -31,11 +31,15 @@ public class UsuariosService {
 				.anyMatch(u->u.getUsuario().equals(usuario)&&u.getPassword().equals(pwd));*/
 	}
 	public Ficha fichaUsuario(String usuario) {
-		for(Ficha f:fichas) {
+		/*for(Ficha f:fichas) {
 			if(f.getUsuario().equals(usuario)) {
 				return f;
 			}
 		}
-		return null;
+		return null;*/
+		return fichas.stream() //Stream<Ficha>
+				.filter(f->f.getUsuario().equals(usuario)) //Stream<Ficha>;
+				.findFirst() //Optional<Ficha>
+				.orElse(null);
 	}
 }
