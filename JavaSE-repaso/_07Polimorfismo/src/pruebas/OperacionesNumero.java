@@ -10,7 +10,7 @@ public class OperacionesNumero {
 		System.out.println("El cuadrado es: " + cuadrado(3.5));
 		System.out.println("El cuadrado es: " + cuadrado(3F));
 		System.out.println("El cuadrado es: " + cuadrado(4L));
-		Number m;
+		//Number m;
 		//MOSTRAMOS EL VALOR
 		Number n = getRandomNumber();
 		System.out.println(n.intValue());

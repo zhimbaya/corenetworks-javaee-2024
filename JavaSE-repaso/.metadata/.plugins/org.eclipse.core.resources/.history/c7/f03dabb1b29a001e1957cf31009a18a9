@@ -1,9 +1,0 @@
-package geometria;
-
-public abstract class Triangulo {
-	private double radio;
-
-	public double superficie() {
-		return (Math.PI * radio * radio);
-	}
-}

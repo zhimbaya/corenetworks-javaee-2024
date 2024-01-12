@@ -8,7 +8,7 @@ public class Test {
 		Primera pr = new Primera(5);
 		pr.print();
 		Segunda sg = new Segunda(4, "Marca");
-		pr.print();
+		sg.print();
 		
 		llamadas (new Primera(5));
 		llamadas (new Segunda (4, "marca"));

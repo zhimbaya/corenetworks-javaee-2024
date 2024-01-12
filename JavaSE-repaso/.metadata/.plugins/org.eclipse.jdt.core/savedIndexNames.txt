@@ -1,16 +1,16 @@
-INDEX VERSION 1.134+C:\Users\tarde\Documents\DiegoMisDocumentos\Ejemplos\.metadata\.plugins\org.eclipse.jdt.core
-923702148.index
-1213071129.index
-3308170229.index
-364803338.index
-2624093802.index
-848704736.index
-1223757632.index
+INDEX VERSION 1.134+/Applications/MAMP/htdocs/corenetworks-javaee-2024/JavaSE-repaso/.metadata/.plugins/org.eclipse.jdt.core
+3039517876.index
+3152512048.index
+3248526447.index
+3485216110.index
+646363940.index
+1816963510.index
+1784334127.index
+293109194.index
+1483105037.index
+1181584684.index
+944350617.index
+2574824199.index
 1865797976.index
-3657001470.index
-2181417283.index
-1996819818.index
-2214478994.index
-1236569605.index
-24666212.index
-2727150287.index
+1628665494.index
+3524205344.index
