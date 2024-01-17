@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="estilos.css">
+<title>Productos</title>
+</head>
+<body>
+	<div>
+		<h1>Productos</h1>
+		Nombre: <input type="text" id="nombre"> 
+		Categoria: <input type="text" id="categoria"> 
+		Precio: <input type="text" id="precio"> 
+		<input type="button" value="guardar" onclick="guardar()">
+		<hr>
+		Categoria: <input type="text" id="buscar"> 
+		<input type="button" value="Buscar" onclick="buscar()">
+		<label id="tabla"></label> <br>
+		
+	</div>
+
+	<script type="text/javascript">
+		var productos = [];
+		function guardar() {
+			var producto = new Object();
+			producto.nombre = document.getElementById("nombre").value;
+			producto.categoria = document.getElementById("categoria").value;
+			producto.precio = parseInt(document.getElementById("precio").value);
+			productos.push(producto);
+			alert("Se ha guardado");
+			console.log(JSON.stringify(producto));
+		}
+		function buscar() {
+			var tabla = "<table><tr><th>Nombre</th><th>Categoria</th><th>Precio</th></tr>";
+			var categoria = document.getElementById("buscar").value;
+			productos.forEach(function(p) {
+				if (p.categoria == categoria) {
+					tabla += "<tr><td>" + p.nombre + "</td><td>" + p.categoria + "</td><td>" + p.precio + "</td></tr>";
+				}
+			});
+
+		tabla += "</table>";
+		document.getElementById("tabla").innerHTML = tabla;
+
+		}
+	</script>
+</body>
+</html>

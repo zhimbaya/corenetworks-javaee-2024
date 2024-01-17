@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<meta charset="ISO-8859-1">
+
+<meta charset="UTF-8">
 <meta http-equiv="Expires" content="0">
 <meta http-equiv="Last-Modified" content="0">
 <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
@@ -39,15 +39,40 @@ input {
 </head>
 <body>
 	<div>
-		<h1>A�adir nuevo curso</h1>
-		<form action="FrontController?operation=doGuardar" method="post">
-			Nombre curso:<input type="text" name="nombre" placeholder="Nombre del curso">
-			Duraci�n curso:<input type="text" name="duracion" placeholder="Duraci�n del curso"> 
-			Precio curso:<input type="text" name="precio" placeholder="Precio del curso"> 
+		<h1>Añadir nuevo curso</h1>
+<!-- 		<form action="FrontController?operation=doGuardar" method="post" onsubmit="return validar();"> -->
+		<form action="" method="post" onsubmit="return validar();">
+			Nombre curso:<input type="text" id="nombre" name="nombre" placeholder="Nombre del curso">
+			Duración curso:<input type="text" id="duracion" name="duracion" placeholder="Duración del curso"> 
+			Precio curso:<input type="text" id="precio" name="precio" placeholder="Precio del curso"> 
 			<input type="submit" value="Guardar">
 		</form>
 		<br>
 		<a href="FrontController?operation=toMenu">Salir</a>
 	</div>
+	<script type="text/javascript">
+		function validar(){
+			var nombre = document.getElementById("nombre").value;
+			var duracion = document.getElementById("duracion").value;
+			var precio = document.getElementById("precio").value;
+			if(isNaN(duracion) || isNaN(precio)){
+				alert("Duración y prec deben ser numéricos.");
+				return false;
+			}
+			if(precio <= 0 || duracion <= 0){
+				alert("Los datos son válidos para enviar.");
+				return false;
+			}
+			if(nombre.includes("php")){
+				alert("No se adminten cursos que contengan PHP");
+				return false;
+			}
+			if(duracion.include(".")){
+				alert("La duración debe ser un número entero.");
+				return false;
+			}
+			return true;
+		}
+	</script>
 </body>
 </html>

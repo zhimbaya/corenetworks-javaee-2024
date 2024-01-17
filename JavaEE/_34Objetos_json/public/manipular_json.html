@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JSON</title>
+</head>
+<body>
+	<h1>JSON</h1>
+	<script type="text/javascript">
+		//Objetos JSON
+		var curso = {
+			"nombre" : "Java",
+			"duracion" : 100,
+			"precio" : 120
+		};
+		curso.duracion = 80;
+		alert(curso.nombre);
+		alert(curso.duracion);
+
+		//alternativa
+		var otroCurso = new Object();
+		otroCurso.nombre = "Python";
+		otroCurso.duracion = 60;
+		otroCurso.precio = 80;
+		//representar JSON como cadena
+		console.log(JSON.stringify(otroCurso));
+		//convertir cadena a JSON
+		var emp = '{"departamento":"ventas","salario":2000}';
+		//lo convierte a obj
+		emp = JSON.parse(emp);
+		console.log(emp.departamento);
+	</script>
+</body>
+</html>
