@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Funciones</title>
+</head>
+<body>
+	<h1>Funciones</h1>
+	<input type="button" onclick="console.log(sumatorio(200))" value="FUNCION 1">
+	<input type="button" onclick="sumatorio2(20)" value="FUNCION 2">
+	<input type="button" onclick="console.log(sumatorio(leerNumero()))" value="FUNCION 3">
+	<input type="button" onclick="alert(sumatorio(leerNumero()))" value="FUNCION 4">
+	<script type="text/javascript">
+		function sumatorio(n) {
+			var s = 0, i = 1;
+			while (i <= n) {
+				s += i;
+				i++;
+			}
+			return "Resultado: " + s;
+		}
+		console.log(sumatorio(300));
+
+		function sumatorio2(n) {
+			var s = 0, i = 1;
+			while (i <= n) {
+				s += i;
+				i++;
+			}
+			console.log("El resultado es: " + s);
+		}
+		function leerNumero() {
+			var n = prompt("Introduce número");
+			return n;
+		}
+	</script>
+</body>
+</html>

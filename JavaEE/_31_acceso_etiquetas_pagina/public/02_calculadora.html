@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Calculadora</title>
+</head>
+<body>
+	<h1>Calculadora</h1>
+	<p>Numero 1:</p>
+	<p>
+		<input type="text" id="numero1">
+	</p>
+	<p>Numero 2:</p>
+	<p>
+		<input type="text" id="numero2">
+	</p>
+	<p>
+		<input type="button" value="Sumar" onclick="imprimir(sumar());">
+	</p>
+	<p>
+		<input type="button" value="Multiplicar" onclick="imprimir(multiplicar());">
+	</p>
+	<p>
+		<input type="button" value="Dividir" onclick="imprimir(dividir());">
+	</p>
+	<h1 id="resultado">El resultado es:</h1>
+	<script type="text/javascript">
+		function sumar() {
+			var numero1 = document.getElementById("numero1").value;
+			var numero2 = document.getElementById("numero2").value;
+			var resultado = numero1 + numero2;
+			//alert(resultado);
+			return resultado;
+
+		}
+		function multiplicar() {
+			var numero1 = document.getElementById("numero1").value;
+			var numero2 = document.getElementById("numero2").value;
+			return numero1 * numero2;
+		}
+		function dividir() {
+			var numero1 = document.getElementById("numero1").value;
+			var numero2 = document.getElementById("numero2").value;
+			return numero1 / numero2;
+		}
+
+		function imprimir(n) {
+			var pr = document.getElementById("resultado");
+			pr.innerText = "Resultado = " + n ;
+			resetear();
+		}
+		function resetear(){
+			document.getElementById("numero1").value = "";
+			document.getElementById("numero2").value = "";
+		}
+	</script>
+</body>
+</html>

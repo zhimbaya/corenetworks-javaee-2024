@@ -8,35 +8,33 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "productos")
-public class Producto {
+@Table(name = "cursos")
+public class Curso {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name="idproductos")
-	private int idProducto;
+	private int idcurso;
+	@Column(name = "denominacion")
 	private String nombre;
-	private String categoria;
-	@Column(name = "precio") //si el nombre no coinciden
+	private int duracion;
 	private double precio;
 
-	public Producto() {
+	public Curso() {
 		super();
 	}
-
-	public Producto(int idProducto, String nombre, String categoria, double precio) {
+	public Curso(int idcurso, String nombre, int duracion, double precio) {
 		super();
-		this.idProducto = idProducto;
+		this.idcurso = idcurso;
 		this.nombre = nombre;
-		this.categoria = categoria;
+		this.duracion = duracion;
 		this.precio = precio;
 	}
 
-	public int getIdProducto() {
-		return idProducto;
+	public int getIdcurso() {
+		return idcurso;
 	}
 
-	public void setIdProducto(int idProducto) {
-		this.idProducto = idProducto;
+	public void setIdcurso(int idcurso) {
+		this.idcurso = idcurso;
 	}
 
 	public String getNombre() {
@@ -47,12 +45,12 @@ public class Producto {
 		this.nombre = nombre;
 	}
 
-	public String getCategoria() {
-		return categoria;
+	public int getDuracion() {
+		return duracion;
 	}
 
-	public void setCategoria(String categoria) {
-		this.categoria = categoria;
+	public void setDuracion(int duracion) {
+		this.duracion = duracion;
 	}
 
 	public double getPrecio() {

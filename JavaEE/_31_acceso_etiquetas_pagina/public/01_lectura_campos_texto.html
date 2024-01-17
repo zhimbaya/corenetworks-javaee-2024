@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Lectura campos de texto</title>
+</head>
+<body>
+	<p>Escribir un texto: <input type="text" id="campo"></p>
+	<p><input type="button" onclick="mostrarDato();" value="Mostrar"></p>
+	<p id="p1">Dato en párrafo</p>
+	<script type="text/javascript">
+		function mostrarDato(){
+			//muestra con un alert el valor escrito en la caja
+			//primero obtenemos objeto etiqueta
+			var obj = document.getElementById("campo");
+			//mediante propiedad value obtenemos el valor
+			alert("Ha escrito " + obj.value);
+			//
+			var pr = document.getElementById("p1");
+			alert("El párrafo vale: " + pr.innerText);
+			
+			//reseteamos
+			obj.value="";
+			pr.innerText="";
+		}
+	</script>
+</body>
+</html>

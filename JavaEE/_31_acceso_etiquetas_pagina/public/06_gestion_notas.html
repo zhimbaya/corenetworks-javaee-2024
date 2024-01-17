@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<title>Gestión de Notas</title>
+</head>
+
+<body>
+	<div>
+		<h2>Gestión de Notas</h2>
+		<p>
+			Nota: <input type="text" id="nota">
+			<input type="button" value="Guardar" onclick="guardar()">
+		</p>
+		<p><input type="button" value="Media" onclick="media()"><label id="media"></label></p>
+		<p><input type="button" value="Aprobados" onclick="aprobados()"><label id="aprobados"></label></p>
+		<p><input type="button" value="Ver notas" onclick="notas()"><label id="notas"></label></p>
+	</div>
+	<script type="text/javascript">
+		var nota = document.getElementById("nota").value;
+		var notas = [];
+
+		function guardar() {
+			notas.push(parseInt(nota));
+			resetear();
+		}
+		
+		function media() {
+			var suma = 0;
+			for (let i = 0; i <= notas.length; i++) {
+				suma = suma + notas[i];
+			}
+			document.getElementById("media").innerText= suma / notas.length;
+		}
+
+		function aprobados(){
+			switch (notas) {
+				case 1:
+				case 2:
+				case 3:
+				case 4:
+					return 
+					break;
+				case 5:
+				case 6:
+				case 7:
+				case 8:
+				case 9:
+				case 10:
+					break;
+				default:
+					break;
+			}
+		}
+		function resetear(){
+			document.getElementById("nota").value = "";
+		}
+
+	</script>
+</body>
+
+</html>
