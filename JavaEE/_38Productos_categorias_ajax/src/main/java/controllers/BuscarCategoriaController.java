@@ -1,7 +1,10 @@
 package controllers;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.List;
+
+import com.google.gson.Gson;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -15,10 +18,15 @@ import service.ProductosService;
 public class BuscarCategoriaController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void service(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		ProductosService productosService = new ProductosService();
 		List<Producto> productos = productosService.buscarPorCategoria(request.getParameter("categoria"));
-		request.setAttribute("producto", productos);
+		
+		PrintWriter out = response.getWriter();
+		response.setContentType("application/json");
+		Gson gson = new Gson();
+		out.println(gson.toJson(productos));
 	}
 
 }

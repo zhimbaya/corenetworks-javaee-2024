@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- <link rel="stylesheet" type="text/css" href="estilos.css"> -->
+<title>Productos</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<div class="container text-center">
+		<div class="row justify-content-md-center">
+			<div class="col-4">
+				<h1>Productos</h1>
+				<label for="nombre" class="form-label">Nombre:</label>
+				<input type="text" id="nombre" name="nombre" class="form-control"/>
+				<label for="categoria" class="form-label">Categoria:</label>
+				<input type="text" id="categoria" name="categoria" class="form-control">
+				<label for="precio" class="form-label">Precio:</label>
+				<input type="text" id="precio" name="precio" class="form-control"/> <br>
+				<input type="button" value="Guardar" id="btnGuardar" class="btn btn-primary"/>
+				<hr>
+				<label for="categorias" class="form-label">Categoria:</label>
+				<input type="text" id="buscar" name="categorias" class="form-control" /> <br>
+				<input type="button" value="Buscar" id="btnBuscar" class="btn btn-warning" />
+				<hr>
+				<label id="tabla"></label> <br>
+			</div>
+		</div>
+</div>
+
+	<script type="text/javascript">
+		var productos = [];
+		$("#btnGuardar").click(function () {
+			var producto = new Object();
+			producto.nombre = $("#nombre").val();
+			producto.categoria = $("#categoria").val();
+			producto.precio = $("#precio").val();
+			productos.push(producto);
+			
+			alert("Se ha guardado");
+			console.log(JSON.stringify(producto));
+		});
+		
+		$("#btnBuscar").click(buscar);
+		function buscar() {
+			var tabla = "<table><tr><th>Nombre</th><th>Categoria</th><th>Precio</th></tr>";
+			var categoria = $("#buscar").val();
+			$.each(productos,function(i,p){
+				if (p.categoria == categoria) {
+					tabla += "<tr><td>" + p.nombre + "</td><td>" + p.categoria + "</td><td>" + p.precio + "</td></tr>";
+				}
+			});
+
+		tabla += "</table>";
+		$("#tabla").html(tabla);
+
+		}
+	</script>
+</body>
+</html>

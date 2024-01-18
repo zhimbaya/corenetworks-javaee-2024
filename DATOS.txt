@@ -42,12 +42,46 @@ Instalación de Mysql y workbech
 https://dev.mysql.com/downloads/installer/
 
 PERSISTENCIA
-1.-dependencias (framework + driver de bd)
+1.-dependencias (framework + driver de bd) > POM
 2.-configurar cada persistencia
 	- crear entidades y configurarlas
-	- crear el persistence.xml (Projects facets > JPA)
+	- crear el persistence.xml (Propiedades  > Projects facets > JPA)
+		-general org.hibernate.jpa.HibernatePersistenceProvider
+		-managed class 
+		-connetion > resouce local > añadir datos > com.mysql.cj.jdbc.Driver , jdbc:mysql://localhost:3306/tienda 
 3.-logica de negocio, JPA
+	-error de persitence > boton derecho proyecto > JPA Tools > actualizar lista.
 
+11/01/2024
+https://jakarta.ee/specifications/platform/8/apidocs/
 
+15/01/2024
+https://www.w3schools.com/git/git_pull_from_remote.asp?remote=github
+https://miguelangelmedina.es/28-anadir-un-corrector-ortografico-en-espanol-castellano-a-eclipse/
+Estamos con CSS.
+
+16/01/2024
+Instalación de visual studio code.
+https://caniuse.com/?search=inner
+
+17/01/2024
+JSON
+var curso = {"nombre":"java","duracion":100};
+Suscripción
+https://learn.oracle.com/ords/training/dl4_activation.activateOrder?key=FB41E417D6CEAD5D
+
+# Una vez clonado el repositorio, estarás trabajando dentro de la rama por defecto (Por defecto es `main`)
+git clone https://github.com/<git-usuario>/<nombre-repo> && cd <nombre-repo>
+# Haz cambios y agrega tus archivos (repite el comando `git add` por cada archivo, o utiliza `git add .` para agregarlos todos)
+git add <nombre-archivo>
+# Ahora haz el commit de tu código
+git commit -m "Agregué cambios a mi repo!"
+# Sube los cambios en la rama 'main' a github
+git push origin main
+
+18/01/2024
+JQuery
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+AJAX
 
 

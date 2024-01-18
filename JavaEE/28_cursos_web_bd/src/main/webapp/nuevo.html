@@ -56,18 +56,18 @@ input {
 			var duracion = document.getElementById("duracion").value;
 			var precio = document.getElementById("precio").value;
 			if(isNaN(duracion) || isNaN(precio)){
-				alert("Duración y prec deben ser numéricos.");
+				alert("Duración y precio deben ser numéricos.");
 				return false;
 			}
 			if(precio <= 0 || duracion <= 0){
-				alert("Los datos son válidos para enviar.");
+				alert("Los datos NO son válidos para enviar.");
 				return false;
 			}
 			if(nombre.includes("php")){
 				alert("No se adminten cursos que contengan PHP");
 				return false;
 			}
-			if(duracion.include(".")){
+			if(duracion.includes(".")){
 				alert("La duración debe ser un número entero.");
 				return false;
 			}
