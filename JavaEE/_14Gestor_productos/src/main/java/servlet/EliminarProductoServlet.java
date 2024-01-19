@@ -19,7 +19,6 @@ public class EliminarProductoServlet extends HttpServlet {
 
 		ProductoService productoService = new ProductoService();
 		productoService.eliminarProducto(request.getParameter("nombre"));
-		
 		request.getRequestDispatcher("Inicio.html").forward(request, response);
 	}
 

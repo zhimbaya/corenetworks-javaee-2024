@@ -20,7 +20,7 @@ public class ContadorServlet extends HttpServlet {
 		// recuperamos el contador, le sumamos 1 y lo volvemos a sumar
 		//comprobamos que sea distinto de null, en caso de ser nulo se crea cero
 		int actual= 0;
-		if(session.getAttribute("contador")!=null) {
+		if(session.getAttribute("contador") != null) {
 			actual = (Integer) session.getAttribute("contador");
 		}
 		

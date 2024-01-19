@@ -1,27 +1,29 @@
 package servlet;
 
 import java.io.IOException;
+import java.util.List;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import service.ProductoService;
+import model.Resultado;
+import service.BuscadorService;
 
-@WebServlet("/ProductosServlet")
-public class ProductosServlet extends HttpServlet {
+@WebServlet("/Buscador")
+public class Buscador extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	protected void service(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		
-		ProductoService productoService = new ProductoService();
-		productoService.agregarProducto(
-				request.getParameter("nombre"),
-				Double.parseDouble(request.getParameter("precio")), 
-				request.getParameter("categoria"));
-		request.getRequestDispatcher("Inicio.html").forward(request, response);
+		BuscadorService buscadorService = new BuscadorService();
+		List<Resultado> resultado = buscadorService.buscar(request.getParameter("tematica"));
+		request.setAttribute("resultado",resultado);
+		//transferir peticiones al JSP
+		request.getRequestDispatcher("Resultados.jsp").forward(request, response);
+		
 	}
 
 }

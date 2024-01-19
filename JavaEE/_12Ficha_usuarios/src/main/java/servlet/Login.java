@@ -10,18 +10,15 @@ import jakarta.servlet.http.HttpServletResponse;
 import model.Ficha;
 import service.UsuarioService;
 
-/**
- * Servlet implementation class Login
- */
 public class Login extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	protected void service(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		
 		UsuarioService service = new UsuarioService();
 		RequestDispatcher dispatcher;
-		if(service.autenticar(request.getParameter("usuario"), 
-				request.getParameter("password"))) {
+		if(service.autenticar(request.getParameter("usuario"),request.getParameter("password"))) {
 			//busca la ficha del usuario
 			Ficha ficha = service.fichaUsuario(request.getParameter("usuario"));
 			//guardamos ficha en atributo petición

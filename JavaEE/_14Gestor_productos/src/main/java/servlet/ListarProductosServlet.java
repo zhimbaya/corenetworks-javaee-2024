@@ -15,12 +15,9 @@ import service.ProductoService;
 public class ListarProductosServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-	/**
-	 * @see HttpServlet#service(HttpServletRequest request, HttpServletResponse response)
-	 */
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		ProductoService productoService = new ProductoService();
 		
+		ProductoService productoService = new ProductoService();
 		List<Producto> listar = productoService.buscarPorCategoria(request.getParameter("categoria"));
 		request.setAttribute("listar",listar);
 		//transferir peticiones al JSP
