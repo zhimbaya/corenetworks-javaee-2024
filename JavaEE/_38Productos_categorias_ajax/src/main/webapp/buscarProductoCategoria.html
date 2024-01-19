@@ -18,12 +18,10 @@
 		<div class="row justify-content-md-center">
 			<div class="col-4">
 				<h1>Lista de productos por Categoría</h1>
-				
 					<label for="categoria" class="form-label">Categoría</label>
 					<input type="text" name="categoria" placeholder="Categoría producto" id="categoria" class="form-control"><br>
 					<!-- se cambia el submit -->
 					<input type="button" value="Ver datos" class="btn btn-warning" id="btnMostrar">
-				
 				<hr>
 				<div id="tblProductos"></div>
 			</div>
@@ -34,7 +32,9 @@
 		function lanzarPeticion(){
 	        //var url = "FrontController?operation=doBuscarPorCategoria&categoria="+$("#categoria").val();
 	        var url = "FrontController";
-	        $.get(url,{"operation":"doBuscarPorCategoria","categoria":$("categoria").val()},function(data){
+	        var params = {"operation":"doBuscarPorCategoria","categoria":$("categoria").val()};
+	        $.get(url,params,function(data){
+	        	alert(JSON.stringify(data));
 	            var tabla = "<table><tr><th>Nombre</th><th>Precio</th></tr>";
 	            $.each(data,function(i,p){
 	                tabla += "<tr><td>"+p.nombre+"</td><td>"+p.precio+"</td></tr>";

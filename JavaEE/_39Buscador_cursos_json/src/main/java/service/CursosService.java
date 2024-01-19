@@ -29,21 +29,6 @@ public class CursosService {
 		}
 	}
 
-	public Curso buscarPorDenominacion(String nombre) {
-		String jpql = "select p from Curso p where p.nombre = ?1";
-		TypedQuery<Curso> query = getEntityManager().createQuery(jpql, Curso.class);
-		query.setParameter(1, nombre);
-		
-		try {
-			return query.getSingleResult();
-		} catch (NoResultException e) {
-			return null;
-		}
-		/* esto tb estaria bien
-		List<Curso> cursos = query.getResultList();
-		return cursos.size()>0?cursos.get(0):null;*/
-	}
-
 	public List<Curso> buscarPorPreciosCursoMax(double precioMax) {
 		String jpql = "select p from Curso p where p.precio <= ?1";
 		TypedQuery<Curso> query = getEntityManager().createQuery(jpql, Curso.class);
@@ -51,39 +36,38 @@ public class CursosService {
 		return query.getResultList();
 	}
 
-	public void eliminarCurso(String nombre) {
-		String jpql = "delete from Curso p where p.nombre =?1";
-		EntityManager em = getEntityManager();
-		Query query = em.createQuery(jpql);
-		query.setParameter(1, nombre);
-		EntityTransaction tx = em.getTransaction();
-		tx.begin();
-		query.executeUpdate();
-		tx.commit();
-	}
-
-	public void modificarDuracion(String nombre, int nuevaDuracion) {
-		/*
-		String jpql = "select p from Curso p where p.duracion=?1";
+	private Curso buscarPorDenominacion(String nombre) {
+		String jpql = "select c from Curso c where c.nombre=?1";
 		TypedQuery<Curso> query = getEntityManager().createQuery(jpql, Curso.class);
 		query.setParameter(1, nombre);
-		List<Curso> cursos = query.getResultList();
-		for (Curso c : cursos) {
-			if (c.getNombre().equals(nombre)) {
-				c.setDuracion(nuevaDuracion);
-				break;
-			}
-		}*/
-		//También podría ser asi
-		
-		String jpql = "update Curso c set c.duracion=?1 where c.nombre=?2";
-		EntityManager em = getEntityManager();
-		Query query = em.createQuery(jpql);
-		query.setParameter(1, nuevaDuracion);
-		query.setParameter(2, nombre);
-		EntityTransaction tx = em.getTransaction();
-		tx.begin();
-		query.executeUpdate();
-		tx.commit();
+		try {
+			return query.getSingleResult();
+		} catch (NoResultException ex) {
+			return null;
+		}
+
+		/*
+		 * List<Curso> cursos=query.getResultList(); return
+		 * cursos.size()>0?cursos.get(0):null;
+		 */
+	}
+
+	public List<Curso> cursosPorDuracion(int min, int max) {
+		String jpql = "select c from Curso c where c.duracion>=?1 and c.duracion<=?2";
+		TypedQuery<Curso> query = getEntityManager().createQuery(jpql, Curso.class);
+		query.setParameter(1, min);
+		query.setParameter(2, max);
+		return query.getResultList();
+	}
+
+	public List<Curso> preciosCursoMax(double precioMax) {
+		String jpql = "select c from Curso c where c.precio<=?1";
+		/*
+		 * TypedQuery<Curso> query=getEntityManager().createQuery(jpql,Curso.class);
+		 * query.setParameter(1, precioMax); return query.getResultList();
+		 */
+		Query query = getEntityManager().createQuery(jpql);
+		query.setParameter(1, precioMax);
+		return (List<Curso>) query.getResultList();
 	}
 }

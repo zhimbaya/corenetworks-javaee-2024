@@ -1,6 +1,7 @@
 package controller;
 
 import jakarta.servlet.ServletException;
+
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -14,16 +15,19 @@ public class FrontController extends HttpServlet {
 			throws ServletException, IOException {
 		
 		String op = request.getParameter("operation");
+		String urlView = "";
 		switch (op) {
-		case "doBuscarPrecioMax":
-			request.getRequestDispatcher("BuscarPrecioMaxController").include(request, response);
+		case "doMostrarTemas":
+			request.getRequestDispatcher("MostrarTemasController").include(request, response);
+			urlView = "temas.jsp";
 			break;
-			
-		case "doBuscarDuracion":
-			request.getRequestDispatcher("BuscarDuracionController").include(request, response);
+		case "doMostrarLibros":
+			request.getRequestDispatcher("BuscarLibroController").include(request, response);
+			break;
+		case "toInicio":
+			urlView = "inicio.html";
 			break;
 		}
-
+		request.getRequestDispatcher(urlView).forward(request, response);
 	}
-
 }
