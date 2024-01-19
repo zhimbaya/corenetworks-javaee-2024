@@ -13,6 +13,7 @@ public class SaludoPersonalizado extends HttpServlet {
 
 	protected void service(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+
 		String nombre = request.getParameter("nombre");
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();

@@ -40,14 +40,42 @@ input {
 <body>
 	<div>
 		<h1>Añadir nuevo curso</h1>
-		<form action="FrontController?operation=doGuardar" method="post">
-			Nombre curso:<input type="text" name="nombre" placeholder="Nombre del curso">
-			Duración curso:<input type="text" name="duracion" placeholder="Duración del curso"> 
-			Precio curso:<input type="text" name="precio" placeholder="Precio del curso"> 
+		<form action="FrontController?operation=doGuardar" onsubmit="return validar();" method="post">
+			Nombre curso:<input type="text" id="nombre" name="nombre" placeholder="Nombre del curso">
+			Duración curso:<input type="text" id="duracion" name="duracion" placeholder="Duración del curso"> 
+			Precio curso:<input type="text" id="precio" name="precio" placeholder="Precio del curso"> 
 			<input type="submit" value="Guardar">
 		</form>
 		<br>
 		<a href="menu.html">Salir</a>
 	</div>
+	
+	<script type="text/javascript">
+		function validar(){
+			var nombre=document.getElementById("nombre").value;
+			var duracion=document.getElementById("duracion").value;
+			var precio=document.getElementById("precio").value;
+			if(isNaN(duracion)||isNaN(precio)){
+				alert("Duración y precio deben ser numéricos");
+				return false;
+			}
+			if(duracion<=0||precio<=0){
+				alert("Los campos numéricos deben ser positivos");
+				return false;
+			}
+			if(nombre.includes("php")){
+				alert("No se admiten cursos de php");
+				return false;
+			}
+			if(duracion.includes(".")){
+				alert("La duración debe ser entera");
+				return false;
+			}
+			return true;
+		}
+	
+	
+	
+	</script>
 </body>
 </html>

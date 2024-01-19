@@ -49,9 +49,12 @@ public class CursosService{
 	
 	public List<Curso> preciosCursoMax(double precioMax){
 		String jpql="select c from Curso c where c.precio<=?1";
-		TypedQuery<Curso> query=getEntityManager().createQuery(jpql,Curso.class);
+		/*TypedQuery<Curso> query=getEntityManager().createQuery(jpql,Curso.class);
 		query.setParameter(1, precioMax);
-		return query.getResultList();
+		return query.getResultList();*/
+		Query query=getEntityManager().createQuery(jpql);
+		query.setParameter(1, precioMax);
+		return (List<Curso>)query.getResultList();
 	}
 	
 	public void eliminarCurso(String nombre) {

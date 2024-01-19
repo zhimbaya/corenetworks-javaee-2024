@@ -30,7 +30,7 @@ public class FiltroLogin extends HttpFilter implements Filter {
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
 		//si el usuario está autenticado (existe el atributo de sesión usuario)
 		//le dejamos pasar, sino le mandamos a la página de login.html
-		HttpSession sesion=((HttpServletRequest)request).getSession();
+		/*HttpSession sesion=((HttpServletRequest)request).getSession();
 		String usuario=(String)sesion.getAttribute("usuario");
 		if(usuario!=null) {
 			// pass the request along the filter chain
@@ -46,7 +46,8 @@ public class FiltroLogin extends HttpFilter implements Filter {
 			}else {
 				request.getRequestDispatcher("login.html").forward(request, response);
 			}
-		}
+		}*/
+		chain.doFilter(request, response);
 	}
 
 	/**

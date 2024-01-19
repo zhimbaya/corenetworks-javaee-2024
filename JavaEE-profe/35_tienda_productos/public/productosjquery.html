@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+	Nombre:<input type="text" id="nombre">
+	Categoría:<input type="text" id="categoria">
+	Precio:<input type="text" id="precio"><br><br>
+	<input type="button" value="Guardar" id="btnGuardar">
+	<hr>
+	<br>
+	Categoria:<input type="text" id="cat">
+	<input type="button" value="Buscar" id="btnBuscar">
+	<br><br>
+	<div id="tabla">
+	
+	</div>
+	
+	<script type="text/javascript">
+		$("#btnGuardar").click(guardar);
+		$("#btnBuscar").click(buscar);
+		var productos=[];
+		function guardar(){
+			var producto=new Object();
+			producto.nombre=$("#nombre").val();
+			producto.categoria=$("#categoria").val();
+			producto.precio=$("#precio").val();
+			productos.push(producto);
+		}
+		function buscar(){
+			var tabla="<table border='1'><tr><th>Nombre</th><th>Categoría</th><th>Precio</th><tr>";
+			$.each(productos,function(i,p){
+				if(p.categoria==$("#cat").val()){
+					tabla+="<tr><td>"+
+					p.nombre+"</td><td>"+
+					p.categoria+"</td><td>"+
+					p.precio+"</td></tr>";
+				}
+			});
+			tabla+="</table>";
+			$("#tabla").html(tabla);
+		}
+	
+	
+	</script>
+	
+</body>
+</html>
