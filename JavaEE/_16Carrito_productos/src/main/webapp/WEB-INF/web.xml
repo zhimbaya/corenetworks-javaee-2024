@@ -1,42 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" version="6.0">
-  <servlet>
-    <description></description>
-    <display-name>NuevoProductoServlet</display-name>
-    <servlet-name>NuevoProductoServlet</servlet-name>
-    <servlet-class>servlet.NuevoProductoServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>NuevoProductoServlet</servlet-name>
-    <url-pattern>/NuevoProductoServlet</url-pattern>
-  </servlet-mapping>
   <display-name>_16Carrito_productos</display-name>
   <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
-    <welcome-file>index.htm</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.htm</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>inicio.html</welcome-file>
   </welcome-file-list>
-  <servlet>
-    <description></description>
-    <display-name>EliminarProductoServlet</display-name>
-    <servlet-name>EliminarProductoServlet</servlet-name>
-    <servlet-class>servlet.EliminarProductoServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>EliminarProductoServlet</servlet-name>
-    <url-pattern>/EliminarProductoServlet</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>CarritoServlet</display-name>
-    <servlet-name>CarritoServlet</servlet-name>
-    <servlet-class>servlet.CarritoServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>CarritoServlet</servlet-name>
-    <url-pattern>/CarritoServlet</url-pattern>
-  </servlet-mapping>
 </web-app>

@@ -6,7 +6,8 @@ import java.util.List;
 import model.Producto;
 
 public class ProductoService {
-	private static List<Producto> productos = new ArrayList<>();
+	private static List<Producto> productos = new ArrayList<>(List.of(
+			new Producto("p1", 20, "c1")));
 
 	public void agregarProducto(String nombre, double precio, String categoria) {
 		productos.add(new Producto(nombre, precio, categoria));
@@ -16,8 +17,11 @@ public class ProductoService {
 		return productos.stream().filter(p -> p.getCategoria().equals(categoria)).toList();
 
 		/*
-		 * List<Producto> aux=new ArrayList<Producto>(); for(Producto p : productos) {
-		 * if(p.getCategoria().equals(categoria)) { aux.add(p); } } return aux;
+		 * List<Producto> aux=new ArrayList<Producto>(); 
+		 * for(Producto p : productos) {
+		 * if(p.getCategoria().equals(categoria)) { 
+		 * aux.add(p); } } 
+		 * return aux;
 		 */
 	}
 

@@ -17,7 +17,6 @@ public class ProductoService {
 	}
 
 	public List<Producto> buscarPorCategoria(String categoria) {
-
 		List<Producto> aux = new ArrayList<Producto>();
 		for (Producto p : productos) {
 			if (p.getCategoria().equals(categoria)) {
@@ -25,6 +24,5 @@ public class ProductoService {
 			}
 		}
 		return aux;
-
 	}
 }

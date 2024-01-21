@@ -7,9 +7,9 @@
 </head>
 <body>
 	<center>
-		<h2>Productos de <%=request.getParameter("categoria") %> </h2>
+		<h2>Productos de la categoria: <%=request.getParameter("categoria") %> </h2>
 		<%List<Producto> listados = (List<Producto>) request.getAttribute("listar");%>
-		<table>
+		<table border="1">
 			<tr>
 				<td>Nombre</td>
 				<td>Precio</td>

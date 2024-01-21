@@ -5,12 +5,13 @@ import java.io.PrintWriter;
 import java.util.List;
 
 import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import model.Resultado;
 import service.BuscadorService;
-
+@WebServlet("/Buscador")
 public class Buscador extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

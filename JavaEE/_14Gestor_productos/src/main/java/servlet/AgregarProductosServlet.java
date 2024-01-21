@@ -9,8 +9,8 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import service.ProductoService;
 
-@WebServlet("/ProductosServlet")
-public class ProductosServlet extends HttpServlet {
+@WebServlet("/AgregarProductosServlet")
+public class AgregarProductosServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	protected void service(HttpServletRequest request, HttpServletResponse response)
