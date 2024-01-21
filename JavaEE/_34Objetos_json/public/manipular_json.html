@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>JSON</title>
+	<meta charset="UTF-8">
+	<title>JSON</title>
 </head>
 <body>
 	<h1>JSON</h1>
 	<script type="text/javascript">
-		//Objetos JSON
+		//OBJETOS JSON
 		var curso = {
 			"nombre" : "Java",
 			"duracion" : 100,
@@ -17,16 +17,19 @@
 		alert(curso.nombre);
 		alert(curso.duracion);
 
-		//alternativa
+		//ALTERNATIVA
 		var otroCurso = new Object();
 		otroCurso.nombre = "Python";
 		otroCurso.duracion = 60;
 		otroCurso.precio = 80;
-		//representar JSON como cadena
+		
+		//REPRESENTAR JSON COMO CADENA
 		console.log(JSON.stringify(otroCurso));
-		//convertir cadena a JSON
+		
+		//CONVERTIR CADENA A JSON
 		var emp = '{"departamento":"ventas","salario":2000}';
-		//lo convierte a obj
+		
+		//LO CONVIERTE A OBJ
 		emp = JSON.parse(emp);
 		console.log(emp.departamento);
 	</script>

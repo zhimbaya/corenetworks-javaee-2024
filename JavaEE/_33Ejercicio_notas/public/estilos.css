@@ -1,5 +1,6 @@
 body {
 	color: blue;
+	font-family: arial;
 }
 
 h1 {
@@ -11,17 +12,20 @@ div {
 	margin: 50px auto;
 	padding: 15px;
 	background-color: smocke;
-	border: 1px solid purple; input { display : block;
-	margin-bottom: 15px;
-}
-
-input {
-	color: blue;
-	margin: 0 auto;
-	display: block;
-	margin-bottom: 15px;
 	border: 1px solid purple;
-	padding: 7px;
-	display: block;
-}
+
+	input {
+		display: block;
+		margin-bottom: 15px;
+	}
+
+	input {
+		color: blue;
+		margin: 0 auto;
+		display: block;
+		margin-bottom: 15px;
+		border: 1px solid purple;
+		padding: 7px;
+		display: block;
+	}
 }

@@ -84,4 +84,15 @@ JQuery
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 AJAX
 
+19/01/2024
+Preferecias > encodig > escribir utf-8 para que sea por defecto.
+Hoisting
+Instalar dependencias de Lombok desde MVrepositorios
+Descargar lombok > ejecutar > buscar al ruta de instalación de Eclipse ide > reiniciar.
 
+Para visualizar y codificar con javascript desde Eclipse.
+- JS > preferencias > General > editor > File associations > *.js > Generic Text editor > default.
+
+- ecInstalar desde la market place > web developer
+
+Instalar nuevo tema: dark > Iconos

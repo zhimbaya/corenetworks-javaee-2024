@@ -15,18 +15,19 @@
 		<input type="button" value="negrita" id="btnNegrita" />
 	</p>
 	<script type="text/javascript">
+	$(document).ready(function(){
 		$("#btnNegrita").click(negrita);
 		function negrita() {
-			// 			$.each($("p"),function(i,o){
-			// 				o.style.fontWeight="Bold";
-			// 			});
+// 			$.each($("p"),function(i,o){
+// 				o.style.fontWeight="Bold";
+// 			});
 			$("p").each(function () {
 				$(this).css("color", "red");
 				$(this).css("font-size", "30px");
 				$(this).css("fontWeight", "bold");
 			});
 		}
-
+	});
 	</script>
 </body>
 
