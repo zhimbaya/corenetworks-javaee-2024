@@ -4,14 +4,4 @@
   <welcome-file-list>
     <welcome-file>inicio.html</welcome-file>
   </welcome-file-list>
-  <servlet>
-    <description></description>
-    <display-name>buscarCategoriaController</display-name>
-    <servlet-name>buscarCategoriaController</servlet-name>
-    <servlet-class>controllers.BuscarCategoriaController</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>buscarCategoriaController</servlet-name>
-    <url-pattern>/buscarCategoriaController</url-pattern>
-  </servlet-mapping>
 </web-app>

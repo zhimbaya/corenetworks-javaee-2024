@@ -6,38 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Productos</title>
-<style type="text/css">
-body {
-	color: blue;
-}
-
-h1 {
-	text-align: center;
-}
-
-div {
-	width: 400px;
-	margin: 50px auto;
-	padding: 15px;
-	background-color: smocke;
-	border: 1px solid blue;
-}
-
-a {
-	display: block;
-	width: 60%;
-	border: 1px solid blue;
-	margin: 0 auto;
-	margin-bottom: 20px;
-	padding: 15px;
-	margin-bottom: 20px;
-	text-decoration: none;
-}
-
-a:hover {
-	background: blue;
-	color: white;
-}
+<link rel="stylesheet" type="text/css" href="estilos.css" />
 </style>
 </head>
 <body>
