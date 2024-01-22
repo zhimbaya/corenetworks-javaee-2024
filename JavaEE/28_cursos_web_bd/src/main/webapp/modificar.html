@@ -1,66 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="Expires" content="0">
-<meta http-equiv="Last-Modified" content="0">
-<meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
-<meta http-equiv="Pragma" content="no-cache">
-<title>Modificar duración</title>
-<style type="text/css">
-body{
-color:purple;
-}
-h1{
-text-align: center;
-}
-div {
-	width: 400px;
-	margin: 50px auto;
-	padding: 15px;
-	background-color: smocke;
-	border: 1px solid purple; input { display : block;
-	margin-bottom: 15px;
-}
-
-input {
-	color: purple;
-	margin: 0 auto; 
-	display : block;
-	margin-bottom: 15px;
-	border: 1px solid purple;
-	padding: 7px;
-	display: block;
-}
-
-a {
-	display: block;
-	width:60%;
-	border: 1px solid purple; 
-	margin: 0 auto;
-	margin-bottom : 20px;
-	padding: 15px;
-	margin-bottom: 20px;
-	text-decoration: none;
-}
-a:hover {
-	background: purple;
-	color:white;
-}
-</style>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="0">
+	<meta http-equiv="Last-Modified" content="0">
+	<meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> 
+	<title>Modificar duración</title>
 </head>
 <body>
-<div>
-		<h1>Modificar duración</h1>
-		<form action="FrontController?operation=doModificar" method="post">
-			Nombre curso:<input type="text" name="nombre" placeholder="Nombre del curso">
-			<br>
-			Nueva Duración curso:<input type="text" name="duracion" placeholder="Duración del curso"> 
-			<br>
-			<input type="submit" value="Modificar">
-		</form>
-		<br>
-		<a href="FrontController?operation=toMenu">Menú</a>
+	<div class="container text-center">
+		<div class="row justify-content-md-center">
+			<div class="col-4">
+				<div class="mb-3 mt-3">
+					<h1 class="h1">Modificar duración</h1>
+					<form action="FrontController?operation=doModificar" method="post">
+					<label class="form-label" name="nombre">Nombre curso:</label>
+					<input type="text" name="nombre" class="form-control" />
+					<br>
+					<label class="form-label" name="duracion">Nueva Duración curso:</label>
+					<input type="text" name="duracion" class="form-control" /> 
+					<br>
+					<input type="submit" value="Modificar" class="btn btn-warning">
+					</form>
+					<br>
+					<a href="FrontController?operation=toMenu" class="btn btn-primary">Menú</a>
+				</div>
+			</div>
+		</div>
 	</div>
 </body>
 </html>

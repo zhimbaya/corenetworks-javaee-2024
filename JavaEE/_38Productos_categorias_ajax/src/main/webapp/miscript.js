@@ -3,8 +3,6 @@ $(document).ready(function() {
 		//var url = "FrontController?operation=doBuscarPorCategoria?categoria="+$("#categoria").val();
 		var url = "FrontController";
 		var params = { "operation": "doBuscarPorCategoria", "categoria": $("#categoria").val() };
-		//var json = JSON.parse(url);
-		//console.log(JSON.parse(url));
 		$.get(url, params, function(data) {
 			console.log(JSON.stringify(url));
 			//alert(JSON.stringify(data));

@@ -3,6 +3,5 @@
   <display-name>28_cursos_web_bd</display-name>
   <welcome-file-list>
     <welcome-file>login.html</welcome-file>
-
   </welcome-file-list>
 </web-app>
