@@ -13,8 +13,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Cerrar Sesión</title>
+	<meta charset="utf-8">
+	<title>Cerrar Sesión</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css" />
 </head>
 <body>
 	<a href="CerrarSesionServlet">Cerrar sesión</a>

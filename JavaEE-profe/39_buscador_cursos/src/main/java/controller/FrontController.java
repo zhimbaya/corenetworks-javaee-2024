@@ -13,7 +13,7 @@ public class FrontController extends HttpServlet {
 		String op=request.getParameter("operation");
 		//String urlView="";
 		switch(op) {
-			case "doBuscarDuracionMax":
+			case "doBuscarPrecioMax":
 				request.getRequestDispatcher("BuscarPrecioMaxController").forward(request, response);				
 				return;
 			case "doBuscarDuracion":

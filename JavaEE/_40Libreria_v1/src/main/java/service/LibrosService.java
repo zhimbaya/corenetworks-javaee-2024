@@ -21,17 +21,17 @@ public class LibrosService {
 		TypedQuery<Tema> query = getEntityManager().createQuery(jpql, Tema.class);
 		return query.getResultList();
 	}
-	public List<Libro> getLibros(){
-		String jpql = "select l from Libro l";
-		TypedQuery<Libro> query = getEntityManager().createQuery(jpql, Libro.class);
-		return query.getResultList();
-	}
-	
-	public List<Libro> getLibrosTemas(int idTema){
-		String jpql = "select l from Libro l where l.idTema =?1";
-		TypedQuery<Libro> query = getEntityManager().createQuery(jpql, Libro.class);
-		query.setParameter(1, idTema);
-		return query.getResultList();
-	}
 
+	public List<Libro> getLibrosTemas(int idTema) {
+		String jpql = "select l from Libro l";
+		TypedQuery<Libro> query;
+		if (idTema != 0) {
+			jpql += " where l.idTema=?1";
+			query = getEntityManager().createQuery(jpql, Libro.class);
+			query.setParameter(1, idTema);
+		} else {
+			query = getEntityManager().createQuery(jpql, Libro.class);
+		}
+		return query.getResultList();
+	}
 }

@@ -22,8 +22,8 @@ public class FrontController extends HttpServlet {
 			urlView = "temas.jsp";
 			break;
 		case "doMostrarLibros":
-			request.getRequestDispatcher("BuscarLibroController").include(request, response);
-			break;
+			request.getRequestDispatcher("BuscarLibroController").forward(request, response);
+			return; //en peticiones Ajax la respuesta la lleva a cabo el servlet controlador
 		case "toInicio":
 			urlView = "inicio.html";
 			break;

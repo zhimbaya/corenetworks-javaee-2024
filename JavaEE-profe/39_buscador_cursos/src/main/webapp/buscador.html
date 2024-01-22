@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Buscador de Cursos Ajax</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ <!--Aqui se pone la llamada al jQuery-->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body id="pagina" onload="ocultar();">
+	<div >
+	
+		<h3 class="text-center">Buscador de Cursos</h3>
+		<!-- Radio buttons -->
+		<div class="row justify-content-md-center">
+			<div class="col-3">
+				<div class="form-check">
+		  			<input class="form-check-input" type="radio" name="radioCursos" id="rbPrecio"  value="precio" >
+		  			<label class="form-check-label" for="flexRadioDefault1">
+						<p class="h5">Por precio</p>
+		  			</label>
+				</div>
+			</div>	
+			<div class="col-3">
+				<div class="form-check">
+		  			<input class="form-check-input" type="radio" name="radioCursos"   value="duracion" id="rbDuracion" >
+		  			<label class="form-check-label" for="flexRadioDefault2">
+						<p class="h5">Por duracion</p>
+		  			</label>
+				</div>
+			</div>	
+		</div>
+		
+		<!-- campos opcionales de precio -->
+		<div class="row justify-content-md-center" id="precio" >
+			 <div class="d-flex align-items-center justify-md-center">
+                <div class="p-2 m-2 col-3 ">
+                    <p class="h5">Precio Max:</p>
+                </div>
+                <div class="p-2 m-2 col-3  ">
+                    <input type="text" id="precioMax" class="form-control">
+                </div>
+           		<div class="row justify-content-md-center">      
+	                <div class="p-2 m-2 col-3  ">
+						<input  class="btn btn-info" type="submit" value="Ver datos" id="btnMostrarPrecio">
+	                </div>
+                </div>
+            </div>  
+		</div>
+		
+		<!-- campos opcionales de duracion -->
+		<div class="row justify-content-md-center" id="duracion" >
+                <div class="p-2 m-2 col-2 ">
+                    <p class="h5">Duracion Máxima:</p>
+                </div>
+                <div class="p-2 m-2 col-2  ">
+                    <input type="text" id="duracionMax" class="form-control">
+                </div>
+         	
+                <div class="p-2 m-2 col-2 ">
+                    <p class="h5">Duracion Mínima:</p>
+                </div>
+                <div class="p-2 m-2 col-2  ">
+                    <input type="text" id="duracionMin" class="form-control">
+                </div>
+                <div class="row justify-content-md-center">      
+	                <div class="p-2 m-2 col-3  ">
+						<input  class="btn btn-info" type="submit" value="Ver datos" id="btnMostrarDuracion">
+	                </div>
+                </div>
+           </div> 
+          </div>      
+          
+            
+		</div>
+		
+		
+		<!-- table -->
+		<div id="tablaDatos" class="row justify-content-md-center">
+		</div>
+	</div>	
+	
+	 
+	<script type="text/javascript">
+		//ocultar secciones
+		function ocultar(){
+			$("#duracion").hide();
+			$("#precio").hide();
+			
+		};
+		
+		
+		$("#rbPrecio").click(function(){
+			$("#duracion").hide();
+			$("#precio").show();
+			$("#tablaDatos").hide();
+		});
+		
+		$("#rbDuracion").click(function(){
+			$("#precio").hide();
+			$("#duracion").show();
+			$("#tablaDatos").hide();
+			
+		});
+		
+		
+		$("#btnMostrarPrecio").click(function(){
+			var url="FrontController";
+			var params={"operation":"doBuscarPrecioMax","precio":$("#precioMax").val()};
+			gestionarPeticion(url,params);
+		});
+		$("#btnMostrarDuracion").click(function(){
+			var url="FrontController";
+			var params={"operation":"doBuscarDuracion","min":$("#duracionMin").val(),"max":$("#duracionMax").val()};
+			gestionarPeticion(url,params);
+		});
+		
+		function gestionarPeticion(url,params){
+			$("#tablaDatos").show();
+			$.get(url,params,function(data){
+				alert(JSON.stringify(data));
+				var tabla="<table border='1'><tr><th>Nombre</th><th>Duración</th><th>Precio</th></tr>";
+				$.each(data,function(i,p){
+					tabla+="<tr><td>"+p.nombre+"</td><td>"+p.duracion+"</td><td>"+p.precio+"</td></tr>";
+				});
+				tabla+="</table>";
+				$("#tablaDatos").html(tabla);
+			});
+		}
+	
+		
+	
+	
+	</script>
+
+</body>
+</html>

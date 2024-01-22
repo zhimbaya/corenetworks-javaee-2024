@@ -10,16 +10,17 @@
 	<meta http-equiv="Pragma" content="no-cache">
 	<title>Temas</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 	<div class="container text-center">
 		<div class="row justify-content-md-center">
-			<div class="col-4">
+			<div class="col-4 p-5">
 				<fieldset>
 					<legend>Seleccione un tema:</legend>
-					<select name="select" class="form-select" id="temaSel">
+					<select name="temaSel" class="form-select" id="temaSel">
 						<option value="0">-Todos-</option>
 						<c:forEach var="t" items="${requestScope.tema}">
 							<option value="${t.idTema}">${t.tema}</option>
@@ -27,29 +28,14 @@
 					</select>
 				</fieldset>
 				<br>
-				<input type="button" id="btnMostarLibros" value="Mostrar"/>
-				<hr>
+				<input type="button" id="btnMostarLibros" value="Mostrar" class="btn btn-success"/>
+				<br>
 				<div id="tblLibros"></div>
-				<hr>
-				<a href="FrontController?operation=toInicio" class="btn btn-warning">Volver al home</a>
+				<br>
+				<a href="FrontController?operation=toInicio" class="btn btn-warning">Home</a>
 			</div>
 		</div>
 	</div>
-	<script type="text/javascript">
-		$("#btnMostrarLibros").click(lanzarPeticion);
-		function lanzarPeticion(){
-	        var url = "FrontController";
-	        var params = {"operation":"doMostrarLibros","idTema":$("idTema").val()};
-	        $.get(url,params,function(data){
-	        	alert(JSON.stringify(data));
-	            var tabla = "<table><tr><th>Título</th><th>Páginas</th><th>Precio</th></tr>";
-	            $.each(data,function(i,p){
-	                tabla += "<tr><td>"+p.titulo+"</td><td>"+p.pagina+"</td><td>"+p.precio+"</tr>";
-	            });
-	            tabla +="</table>";
-	            $("#tblLibros").html(tabla);
-	        });
-		}
-	</script>
+
 </body>
 </html>
