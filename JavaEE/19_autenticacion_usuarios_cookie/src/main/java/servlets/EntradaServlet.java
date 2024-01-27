@@ -4,13 +4,15 @@ import java.io.IOException;
 import java.util.Arrays;
 
 import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-
+@WebServlet("/EntradaServlet")
 public class EntradaServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
 	
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// Comprobar si llega la cookie "user"

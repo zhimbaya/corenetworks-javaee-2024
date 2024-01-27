@@ -21,6 +21,7 @@ public class Curso {
 	public Curso() {
 		super();
 	}
+
 	public Curso(int idcurso, String nombre, int duracion, double precio) {
 		super();
 		this.idcurso = idcurso;

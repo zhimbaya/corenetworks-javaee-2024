@@ -25,7 +25,8 @@ public class ContadorServlet extends HttpServlet {
 		}
 		
 		/*
-		 * actual++; session.setAttribute("contador",actual);
+		 * actual++; 
+		 * session.setAttribute("contador",actual);
 		 */
 		session.setAttribute("contador", ++actual);
 		// transferir petición a JSP

@@ -3,10 +3,5 @@
   <display-name>_39Buscador_cursos_json</display-name>
   <welcome-file-list>
     <welcome-file>buscarCurso.html</welcome-file>
-    <welcome-file>buscarCurso.htm</welcome-file>
-    <welcome-file>buscarCurso.jsp</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.htm</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
 </web-app>

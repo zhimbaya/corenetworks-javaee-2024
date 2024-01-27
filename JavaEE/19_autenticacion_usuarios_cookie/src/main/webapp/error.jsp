@@ -3,8 +3,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
+	<meta charset="utf-8">
+	<title>Error</title>
 </head>
 <body>
 	<h3>El usuario <%=request.getParameter("usuario") %> con contraseña 

@@ -9,28 +9,34 @@ import jakarta.persistence.Table;
 @Table(name = "usuarios")
 public class Usuario {
 	@Id
-	@Column(name = "usuarios") 
+	@Column(name = "usuarios")
 	private String usuario;
 	private String password;
+
 	public Usuario() {
 		super();
 	}
+
 	public Usuario(String usuario, String password) {
 		super();
 		this.usuario = usuario;
 		this.password = password;
 	}
+
 	public String getUsuario() {
 		return usuario;
 	}
+
 	public void setUsuario(String usuario) {
 		this.usuario = usuario;
 	}
+
 	public String getPassword() {
 		return password;
 	}
+
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	
+
 }
