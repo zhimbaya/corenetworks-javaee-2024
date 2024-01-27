@@ -1,0 +1,38 @@
+body {
+	color: blue;
+	font-family: Arial;
+}
+
+h1 {
+	text-align: center;
+	color: black;
+}
+
+div {
+	width: 400px;
+	margin: 50px auto;
+	padding: 15px;
+	background-color: smocke;
+	border: 1px solid purple;
+
+	input {
+		display: block;
+		margin-bottom: 15px;
+	}
+
+	input {
+		color: blue;
+		margin: 0 auto;
+		display: block;
+		margin-bottom: 15px;
+		border: 1px solid purple;
+		padding: 7px;
+		display: block;
+	}
+
+}
+
+table {
+	margin: auto;
+	border: purple 1px solid
+}
