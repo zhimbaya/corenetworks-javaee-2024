@@ -85,14 +85,70 @@ JQuery
 AJAX
 
 19/01/2024
-Preferecias > encodig > escribir utf-8 para que sea por defecto.
-Hoisting
-Instalar dependencias de Lombok desde MVrepositorios
-Descargar lombok > ejecutar > buscar al ruta de instalación de Eclipse ide > reiniciar.
+Lombok
+Descargar el paquete por maven
+Instalar el plugin de Lombok en eclipse
+Ir a la ruta de la librería y ejecutar > buscar la ruta del eclipse instalado.
+C:\Users\tarde\Documents\DiegoMisDocumentos\Software\eclipse-jee-2023-12-R-win32-x86_64\eclipse.exe
 
-Para visualizar y codificar con javascript desde Eclipse.
-- JS > preferencias > General > editor > File associations > *.js > Generic Text editor > default.
+22/01/2024
+Carrito
 
-- ecInstalar desde la market place > web developer
+23/01/2024
+Patrón MVC, Intercenting Filter y DTO
+DATA TRANSFER OBJECT
+- Patrón factoría
+Spring
+JavaEE -> CDI (Contexts and Dependency Injection) -> buscar e instalar las dependencias -> requiere de un beans.xml
+- webapp > WEB-INF > aquí crear el beans.xml
+- SE CREA UNAN INTERFAZ > REFACTOR -> EXTRACT INTERFACE
 
-Instalar nuevo tema: dark > Iconos
+24/01/2024
+* Frameworks Java
+-Struts > mvc
+-Java Server Faces (jsf) > mvc
+-Spring
+
+------
+- Crear proyecto web dinámico.
+- Cargar dependencias.
+- Crear las interfaces y las implementaciones.
+- Modelo de datos (entidades y datos).
+- Logica de negocio.
+- Configuracion lógica de negocio.
+- controlador
+- vista
+- configuración web (controlador + vista)
+
+25/01/2024
+@service
+@repos-only
+@component
+@container
+@rescontroller
+Spring > DispacherServlet > es el frontcontroller, lo hace automático.
+Spring > los controladores de acción son clases y no servlets
+
+26/01/2024
+thymeleaf
+configurar el archivo Mvcconfig
+
+Persistencia:
+- añadir las dependencias
+- configurar ServiceConfig
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
