@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Last-Modified" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate" />
+    <meta http-equiv="Pragma" content="no-cache"> 
+    <title>Lista Productos</title>
+    <link rel="stylesheet" href="miestilo.css">
+</head>
+<body>
+	<div>
+    <h2>Productos de <span th:text="${param.categoria}"></span></h2>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Precio</th>
+        </tr>
+
+		<tr th:each="pr:${productos}">
+			<td><span th:text="${pr.nombre}">Nombre</span></td>
+			<td><span th:text="${pr.precio}">Precio</span></td>
+		</tr>
+
+	</table>
+    <a href="toMenu">Volver a Inicio</a>
+    </div>
+</body>
+</html>

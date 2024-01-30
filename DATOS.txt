@@ -137,8 +137,19 @@ Persistencia:
 - añadir las dependencias
 - configurar ServiceConfig
 
+29/01/2024
+- Dependencias requisito
+- Diferencias:
+- No se usa el archivo persisten.xml
+- Spring te inyecta o crea el entitymanager.
+- No hay que hacer transacción o confirmar transacción.
+- Todo lo demas es igual.
 
-
+----------
+Patrón DAO
+----------
+Separar en dos capas el modelo logica de negocio.
+Capa service - Capa DAO
 
 
 
