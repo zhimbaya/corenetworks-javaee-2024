@@ -23,6 +23,8 @@ public class BuscadorController {
 	public String guardar(@ModelAttribute Producto producto, Model model) { // si son muchos parámetros
 		if (!productosService.guardar(producto)) {
 			model.addAttribute("mensajeAlta", "Producto " + producto.getNombre() + " repetido, no se añadió!!!");
+		}else {
+			model.addAttribute("mensajeAlta","El producto "+ producto.getNombre() + " se añadió!!!");
 		}
 		
 		return "menu";

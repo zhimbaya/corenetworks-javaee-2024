@@ -11,7 +11,7 @@ import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableTransactionManagement //habilita la transaccionalidad usando anotación @Transactional
-@ComponentScan(basePackages = {"service.implementations"})
+@ComponentScan(basePackages = {"service.implementations","dao.implementations"})
 @Configuration
 public class ServiceConfig {
 	String driver="com.mysql.cj.jdbc.Driver";
