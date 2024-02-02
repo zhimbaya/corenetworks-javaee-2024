@@ -91,6 +91,18 @@ Instalar el plugin de Lombok en eclipse
 Ir a la ruta de la librería y ejecutar > buscar la ruta del eclipse instalado.
 C:\Users\tarde\Documents\DiegoMisDocumentos\Software\eclipse-jee-2023-12-R-win32-x86_64\eclipse.exe
 
+Preferecias > encodig > escribir utf-8 para que sea por defecto.
+Hoisting
+Instalar dependencias de Lombok desde MVrepositorios
+Descargar lombok > ejecutar > buscar al ruta de instalación de Eclipse ide > reiniciar.
+
+Para visualizar y codificar con javascript desde Eclipse.
+- JS > preferencias > General > editor > File associations > *.js > Generic Text editor > default.
+
+- ecInstalar desde la market place > web developer
+
+Instalar nuevo tema: dark > Iconos
+
 22/01/2024
 Carrito
 
@@ -151,9 +163,29 @@ Patrón DAO
 Separar en dos capas el modelo logica de negocio.
 Capa service - Capa DAO
 
+30/01/2024
+Examen
+Estilos y recursos estáticos.
+https://docs.spring.io/spring-data/jpa/docs/current/api/org/springframework/data/jpa/repository/JpaRepository.html
+Spring data JPA
 
+31/01/2024
+Para proyecto maven y herede > file > new > maven proyect > proyecto simple > pom
+Otro proyecto > pom > overview
 
+------------------------------
+01/02/2024
+@RequestMapping para tanto post y get.
+DTos al ejercicio 11 de spring.
 
+JPA
+-Entidad venta y Relaciones entre tablas. u v - l ; b v - c
+-Dto ventadto
+-actualización de mapeado
+-daos
+-logica de negocio
+-controlador
+-vistas
 
 
 
