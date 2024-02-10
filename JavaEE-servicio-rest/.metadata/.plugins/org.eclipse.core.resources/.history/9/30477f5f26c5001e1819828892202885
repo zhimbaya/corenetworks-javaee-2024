@@ -1,0 +1,8 @@
+package model;
+
+public class Curso {
+	private int idcurso;
+	private String denominacion;
+	private int duracion;
+	private double precio;
+}

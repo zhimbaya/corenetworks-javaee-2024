@@ -1,0 +1,11 @@
+package service.interfaces;
+
+import java.util.List;
+
+import model.Formacion;
+
+public interface PaisesServices {
+	List<Pais> continentes();
+	List<Formacion> catalogoPorDuracion(int max);
+	void alta(Formacion foramacion);
+}

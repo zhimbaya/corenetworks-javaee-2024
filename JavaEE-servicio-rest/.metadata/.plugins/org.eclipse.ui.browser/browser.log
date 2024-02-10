@@ -1,0 +1,227 @@
+
+feb 06, 2024 18:08:39.13 NEW SESSION
+feb 06, 2024 18:08:39.14 *** You are running in background task mode. ***
+feb 06, 2024 18:08:39.15 *** You are running in headless mode.
+feb 06, 2024 18:08:39.16 console.error: "C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release" "" 0 ".purge.bg_rm" "HttpCache"
+feb 06, 2024 18:08:39.17 console.error: "Pinged glean, waiting for submission."
+feb 06, 2024 18:08:44.06 *** You are running in background task mode. ***
+feb 06, 2024 18:08:44.07 *** You are running in headless mode.
+feb 06, 2024 18:08:44.10 *** You are running in background task mode. ***
+feb 06, 2024 18:08:44.10 *** You are running in headless mode.
+feb 06, 2024 18:08:44.24 console.error: "C:\\Users\\tarde\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release\\storage\\to-be-removed" "" 0 "*" "Quota"
+feb 06, 2024 18:08:45.03 console.error: "Pinged glean, waiting for submission."
+feb 06, 2024 18:08:45.04 console.error: "C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release" "cache2.2024-02-06-17-08-44.purge.bg_rm" 10 ".purge.bg_rm" "HttpCache"
+feb 06, 2024 18:08:45.05 console.error: "started removing C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release\\cache2.2024-02-06-17-08-44.purge.bg_rm"
+feb 06, 2024 18:08:45.06 console.error: "done removing C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release\\cache2.2024-02-06-17-08-44.purge.bg_rm. removed 35 entries."
+feb 06, 2024 18:08:45.07 console.error: "Pinged glean, waiting for submission."
+feb 06, 2024 18:08:48.91 *** You are running in background task mode. ***
+feb 06, 2024 18:08:49.39 console.error: "C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release" "" 0 ".purge.bg_rm" "HttpCache"
+feb 06, 2024 18:08:49.40 *** You are running in headless mode.
+feb 06, 2024 18:08:49.40 console.error: "Pinged glean, waiting for submission."
+
+feb 07, 2024 18:22:27.35 NEW SESSION
+feb 07, 2024 18:22:27.37 *** You are running in background task mode. ***
+feb 07, 2024 18:22:27.37 *** You are running in headless mode.
+feb 07, 2024 18:22:27.51 console.error: "C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release" "" 0 ".purge.bg_rm" "HttpCache"
+feb 07, 2024 18:22:28.30 console.error: "Pinged glean, waiting for submission."
+feb 07, 2024 18:33:48.92 *** You are running in background task mode. ***
+feb 07, 2024 18:33:49.18 console.error: "C:\\Users\\tarde\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release\\storage\\to-be-removed" "" 0 "*" "Quota"
+feb 07, 2024 18:33:49.19 *** You are running in headless mode.
+feb 07, 2024 18:33:49.19 *** You are running in background task mode. ***
+feb 07, 2024 18:33:49.20 console.error: "Pinged glean, waiting for submission."
+feb 07, 2024 18:33:49.20 *** You are running in headless mode.
+feb 07, 2024 18:33:49.21 console.error: "C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release" "cache2.2024-02-07-17-33-48.purge.bg_rm" 10 ".purge.bg_rm" "HttpCache"
+feb 07, 2024 18:33:49.22 console.error: "started removing C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release\\cache2.2024-02-07-17-33-48.purge.bg_rm"
+feb 07, 2024 18:33:49.22 console.error: "done removing C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release\\cache2.2024-02-07-17-33-48.purge.bg_rm. removed 26 entries."
+feb 07, 2024 18:33:49.23 console.error: "Pinged glean, waiting for submission."
+feb 07, 2024 18:37:47.18 *** You are running in background task mode. ***
+feb 07, 2024 18:37:47.20 *** You are running in headless mode.
+feb 07, 2024 18:37:47.38 console.error: "C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release" "" 0 ".purge.bg_rm" "HttpCache"
+feb 07, 2024 18:37:47.38 console.error: "Pinged glean, waiting for submission."
+feb 07, 2024 18:47:14.73 *** You are running in background task mode. ***
+feb 07, 2024 18:47:15.35 console.error: "C:\\Users\\tarde\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release\\storage\\to-be-removed" "" 0 "*" "Quota"
+feb 07, 2024 18:47:15.36 *** You are running in headless mode.
+feb 07, 2024 18:47:15.36 *** You are running in background task mode. ***
+feb 07, 2024 18:47:15.37 *** You are running in headless mode.
+feb 07, 2024 18:47:15.38 console.error: "Pinged glean, waiting for submission."
+feb 07, 2024 18:47:15.38 console.error: "C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release" "cache2.2024-02-07-17-47-14.purge.bg_rm" 10 ".purge.bg_rm" "HttpCache"
+feb 07, 2024 18:47:15.39 console.error: "started removing C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release\\cache2.2024-02-07-17-47-14.purge.bg_rm"
+feb 07, 2024 18:47:15.39 console.error: "done removing C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release\\cache2.2024-02-07-17-47-14.purge.bg_rm. removed 23 entries."
+feb 07, 2024 18:47:15.40 console.error: "Pinged glean, waiting for submission."
+feb 07, 2024 18:47:40.50 *** You are running in background task mode. ***
+feb 07, 2024 18:47:40.64 *** You are running in headless mode.
+feb 07, 2024 18:47:40.66 console.error: "C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release" "" 0 ".purge.bg_rm" "HttpCache"
+feb 07, 2024 18:47:40.66 console.error: "Pinged glean, waiting for submission."
+feb 07, 2024 20:56:34.10 *** You are running in background task mode. ***
+feb 07, 2024 20:56:34.13 *** You are running in headless mode.
+feb 07, 2024 20:56:34.15 *** You are running in background task mode. ***
+feb 07, 2024 20:56:34.17 *** You are running in headless mode.
+feb 07, 2024 20:56:34.27 console.error: "C:\\Users\\tarde\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release\\storage\\to-be-removed" "" 0 "*" "Quota"
+feb 07, 2024 20:56:34.62 console.error: "Deletion of folder 4901d799-9604-4cc7-8d5e-47e00efa6155 - success=true"
+feb 07, 2024 20:56:34.64 console.error: "Deletion of folder 5d623ed5-e714-4e4e-96ae-427a5f406def - success=true"
+feb 07, 2024 20:56:34.67 console.error: "Deletion of folder 821360b2-1ee1-44c3-bac5-349fedd9da73 - success=true"
+feb 07, 2024 20:56:34.68 console.error: "Deletion of folder a644a669-d162-4c41-a001-7f14c60f9634 - success=true"
+feb 07, 2024 20:56:34.69 console.error: "Deletion of folder b7c70460-f280-4900-b918-99900670e546 - success=true"
+feb 07, 2024 20:56:34.70 console.error: "Pinged glean, waiting for submission."
+feb 07, 2024 20:56:34.71 console.error: "C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release" "cache2.2024-02-07-19-56-34.purge.bg_rm" 10 ".purge.bg_rm" "HttpCache"
+feb 07, 2024 20:56:34.71 console.error: "started removing C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release\\cache2.2024-02-07-19-56-34.purge.bg_rm"
+feb 07, 2024 20:56:34.72 console.error: "done removing C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release\\cache2.2024-02-07-19-56-34.purge.bg_rm. removed 273 entries."
+feb 07, 2024 20:56:34.73 console.error: "Pinged glean, waiting for submission."
+
+feb 08, 2024 16:33:57.01 NEW SESSION
+feb 08, 2024 16:33:57.02 *** You are running in background task mode. ***
+feb 08, 2024 16:33:57.03 *** You are running in headless mode.
+feb 08, 2024 16:33:57.18 console.error: "C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release" "" 0 ".purge.bg_rm" "HttpCache"
+feb 08, 2024 16:33:57.19 console.error: "Pinged glean, waiting for submission."
+feb 08, 2024 16:36:05.86 *** You are running in background task mode. ***
+feb 08, 2024 16:36:06.65 *** You are running in headless mode.
+feb 08, 2024 16:36:06.65 *** You are running in background task mode. ***
+feb 08, 2024 16:36:06.66 *** You are running in headless mode.
+feb 08, 2024 16:36:06.66 console.error: "C:\\Users\\tarde\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release\\storage\\to-be-removed" "" 0 "*" "Quota"
+feb 08, 2024 16:36:06.68 console.error: "Pinged glean, waiting for submission."
+feb 08, 2024 16:36:06.68 console.error: "C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release" "cache2.2024-02-08-15-36-05.purge.bg_rm" 10 ".purge.bg_rm" "HttpCache"
+feb 08, 2024 16:36:06.69 console.error: "started removing C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release\\cache2.2024-02-08-15-36-05.purge.bg_rm"
+feb 08, 2024 16:36:06.69 console.error: "done removing C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release\\cache2.2024-02-08-15-36-05.purge.bg_rm. removed 22 entries."
+feb 08, 2024 16:36:06.70 console.error: "Pinged glean, waiting for submission."
+feb 08, 2024 16:36:27.42 *** You are running in background task mode. ***
+feb 08, 2024 16:36:27.43 *** You are running in headless mode.
+feb 08, 2024 16:36:27.59 console.error: "C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release" "" 0 ".purge.bg_rm" "HttpCache"
+feb 08, 2024 16:36:28.36 console.error: "Pinged glean, waiting for submission."
+feb 08, 2024 16:40:24.41 *** You are running in background task mode. ***
+feb 08, 2024 16:40:24.42 *** You are running in headless mode.
+feb 08, 2024 16:40:24.45 *** You are running in background task mode. ***
+feb 08, 2024 16:40:24.46 *** You are running in headless mode.
+feb 08, 2024 16:40:24.59 console.error: "C:\\Users\\tarde\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release\\storage\\to-be-removed" "" 0 "*" "Quota"
+feb 08, 2024 16:40:24.60 console.error: "Pinged glean, waiting for submission."
+feb 08, 2024 16:40:24.61 console.error: "C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release" "cache2.2024-02-08-15-40-24.purge.bg_rm" 10 ".purge.bg_rm" "HttpCache"
+feb 08, 2024 16:40:24.62 console.error: "started removing C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release\\cache2.2024-02-08-15-40-24.purge.bg_rm"
+feb 08, 2024 16:40:24.62 console.error: "done removing C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release\\cache2.2024-02-08-15-40-24.purge.bg_rm. removed 24 entries."
+feb 08, 2024 16:40:24.63 console.error: "Pinged glean, waiting for submission."
+feb 08, 2024 16:40:28.89 *** You are running in background task mode. ***
+feb 08, 2024 16:40:28.90 *** You are running in headless mode.
+feb 08, 2024 16:40:29.05 console.error: "C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release" "" 0 ".purge.bg_rm" "HttpCache"
+feb 08, 2024 16:40:29.83 console.error: "Pinged glean, waiting for submission."
+feb 08, 2024 16:44:04.48 *** You are running in background task mode. ***
+feb 08, 2024 16:44:04.49 *** You are running in headless mode.
+feb 08, 2024 16:44:04.51 *** You are running in background task mode. ***
+feb 08, 2024 16:44:04.52 *** You are running in headless mode.
+feb 08, 2024 16:44:04.68 console.error: "C:\\Users\\tarde\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release\\storage\\to-be-removed" "" 0 "*" "Quota"
+feb 08, 2024 16:44:05.45 console.error: "Pinged glean, waiting for submission."
+feb 08, 2024 16:44:05.46 console.error: "C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release" "cache2.2024-02-08-15-44-04.purge.bg_rm" 10 ".purge.bg_rm" "HttpCache"
+feb 08, 2024 16:44:05.46 console.error: "started removing C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release\\cache2.2024-02-08-15-44-04.purge.bg_rm"
+feb 08, 2024 16:44:05.46 console.error: "done removing C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release\\cache2.2024-02-08-15-44-04.purge.bg_rm. removed 22 entries."
+feb 08, 2024 16:44:05.47 console.error: "Pinged glean, waiting for submission."
+feb 08, 2024 16:44:23.82 *** You are running in background task mode. ***
+feb 08, 2024 16:44:23.82 *** You are running in headless mode.
+feb 08, 2024 16:44:23.98 console.error: "C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release" "" 0 ".purge.bg_rm" "HttpCache"
+feb 08, 2024 16:44:24.75 console.error: "Pinged glean, waiting for submission."
+feb 08, 2024 16:47:41.91 *** You are running in background task mode. ***
+feb 08, 2024 16:47:41.94 *** You are running in headless mode.
+feb 08, 2024 16:47:41.94 *** You are running in background task mode. ***
+feb 08, 2024 16:47:41.95 *** You are running in headless mode.
+feb 08, 2024 16:47:42.09 console.error: "C:\\Users\\tarde\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release\\storage\\to-be-removed" "" 0 "*" "Quota"
+feb 08, 2024 16:47:42.88 console.error: "Pinged glean, waiting for submission."
+feb 08, 2024 16:47:42.89 console.error: "C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release" "cache2.2024-02-08-15-47-41.purge.bg_rm" 10 ".purge.bg_rm" "HttpCache"
+feb 08, 2024 16:47:42.90 console.error: "started removing C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release\\cache2.2024-02-08-15-47-41.purge.bg_rm"
+feb 08, 2024 16:47:42.91 console.error: "done removing C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release\\cache2.2024-02-08-15-47-41.purge.bg_rm. removed 22 entries."
+feb 08, 2024 16:47:42.92 console.error: "Pinged glean, waiting for submission."
+
+feb 08, 2024 17:11:01.44 NEW SESSION
+feb 08, 2024 17:11:01.45 *** You are running in background task mode. ***
+feb 08, 2024 17:11:01.45 *** You are running in headless mode.
+feb 08, 2024 17:11:01.62 console.error: "C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release" "" 0 ".purge.bg_rm" "HttpCache"
+feb 08, 2024 17:11:02.38 console.error: "Pinged glean, waiting for submission."
+feb 08, 2024 17:15:00.12 *** You are running in background task mode. ***
+feb 08, 2024 17:15:00.12 *** You are running in headless mode.
+feb 08, 2024 17:15:00.15 *** You are running in background task mode. ***
+feb 08, 2024 17:15:00.15 *** You are running in headless mode.
+feb 08, 2024 17:15:00.29 console.error: "C:\\Users\\tarde\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release\\storage\\to-be-removed" "" 0 "*" "Quota"
+feb 08, 2024 17:15:00.30 console.error: "Pinged glean, waiting for submission."
+feb 08, 2024 17:15:00.32 console.error: "C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release" "cache2.2024-02-08-16-15-00.purge.bg_rm" 10 ".purge.bg_rm" "HttpCache"
+feb 08, 2024 17:15:00.33 console.error: "started removing C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release\\cache2.2024-02-08-16-15-00.purge.bg_rm"
+feb 08, 2024 17:15:00.33 console.error: "done removing C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release\\cache2.2024-02-08-16-15-00.purge.bg_rm. removed 22 entries."
+feb 08, 2024 17:15:00.34 console.error: "Pinged glean, waiting for submission."
+feb 08, 2024 17:16:01.43 *** You are running in background task mode. ***
+feb 08, 2024 17:16:01.44 *** You are running in headless mode.
+feb 08, 2024 17:16:01.61 console.error: "C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release" "" 0 ".purge.bg_rm" "HttpCache"
+feb 08, 2024 17:16:02.37 console.error: "Pinged glean, waiting for submission."
+feb 08, 2024 17:17:10.12 *** You are running in background task mode. ***
+feb 08, 2024 17:17:10.13 *** You are running in headless mode.
+feb 08, 2024 17:17:10.15 *** You are running in background task mode. ***
+feb 08, 2024 17:17:10.16 *** You are running in headless mode.
+feb 08, 2024 17:17:10.31 console.error: "C:\\Users\\tarde\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release\\storage\\to-be-removed" "" 0 "*" "Quota"
+feb 08, 2024 17:17:11.09 console.error: "Pinged glean, waiting for submission."
+feb 08, 2024 17:17:11.09 console.error: "C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release" "cache2.2024-02-08-16-17-10.purge.bg_rm" 10 ".purge.bg_rm" "HttpCache"
+feb 08, 2024 17:17:11.10 console.error: "started removing C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release\\cache2.2024-02-08-16-17-10.purge.bg_rm"
+feb 08, 2024 17:17:11.10 console.error: "done removing C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release\\cache2.2024-02-08-16-17-10.purge.bg_rm. removed 22 entries."
+feb 08, 2024 17:17:11.11 console.error: "Pinged glean, waiting for submission."
+feb 08, 2024 17:18:03.00 *** You are running in background task mode. ***
+feb 08, 2024 17:18:03.58 console.error: "C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release" "" 0 ".purge.bg_rm" "HttpCache"
+feb 08, 2024 17:18:03.59 *** You are running in headless mode.
+feb 08, 2024 17:18:03.60 console.error: "Pinged glean, waiting for submission."
+feb 08, 2024 17:26:02.16 *** You are running in background task mode. ***
+feb 08, 2024 17:26:02.17 *** You are running in headless mode.
+feb 08, 2024 17:26:02.19 *** You are running in background task mode. ***
+feb 08, 2024 17:26:02.20 *** You are running in headless mode.
+feb 08, 2024 17:26:02.33 console.error: "C:\\Users\\tarde\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release\\storage\\to-be-removed" "" 0 "*" "Quota"
+feb 08, 2024 17:26:02.34 console.error: "Pinged glean, waiting for submission."
+feb 08, 2024 17:26:02.36 console.error: "C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release" "cache2.2024-02-08-16-26-02.purge.bg_rm" 10 ".purge.bg_rm" "HttpCache"
+feb 08, 2024 17:26:02.37 console.error: "started removing C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release\\cache2.2024-02-08-16-26-02.purge.bg_rm"
+feb 08, 2024 17:26:02.37 console.error: "done removing C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release\\cache2.2024-02-08-16-26-02.purge.bg_rm. removed 22 entries."
+feb 08, 2024 17:26:02.38 console.error: "Pinged glean, waiting for submission."
+feb 08, 2024 17:26:55.86 *** You are running in background task mode. ***
+feb 08, 2024 17:26:55.86 *** You are running in headless mode.
+feb 08, 2024 17:26:56.02 console.error: "C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release" "" 0 ".purge.bg_rm" "HttpCache"
+feb 08, 2024 17:26:56.79 console.error: "Pinged glean, waiting for submission."
+feb 08, 2024 18:12:09.42 *** You are running in background task mode. ***
+feb 08, 2024 18:12:09.45 *** You are running in headless mode.
+feb 08, 2024 18:12:09.46 *** You are running in background task mode. ***
+feb 08, 2024 18:12:09.47 *** You are running in headless mode.
+feb 08, 2024 18:12:09.61 console.error: "C:\\Users\\tarde\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release\\storage\\to-be-removed" "" 0 "*" "Quota"
+feb 08, 2024 18:12:09.63 console.error: "Pinged glean, waiting for submission."
+feb 08, 2024 18:12:09.65 console.error: "C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release" "cache2.2024-02-08-17-12-09.purge.bg_rm" 10 ".purge.bg_rm" "HttpCache"
+feb 08, 2024 18:12:09.67 console.error: "started removing C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release\\cache2.2024-02-08-17-12-09.purge.bg_rm"
+feb 08, 2024 18:12:09.69 console.error: "done removing C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release\\cache2.2024-02-08-17-12-09.purge.bg_rm. removed 25 entries."
+feb 08, 2024 18:12:09.70 console.error: "Pinged glean, waiting for submission."
+feb 08, 2024 18:12:47.02 *** You are running in background task mode. ***
+feb 08, 2024 18:12:47.13 *** You are running in headless mode.
+feb 08, 2024 18:12:47.19 console.error: "C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release" "" 0 ".purge.bg_rm" "HttpCache"
+feb 08, 2024 18:12:47.19 console.error: "Pinged glean, waiting for submission."
+
+feb 08, 2024 19:17:22.80 NEW SESSION
+feb 08, 2024 19:17:22.82 *** You are running in background task mode. ***
+feb 08, 2024 19:17:22.99 console.error: "C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release" "" 0 ".purge.bg_rm" "HttpCache"
+feb 08, 2024 19:17:22.99 *** You are running in headless mode.
+feb 08, 2024 19:17:23.00 console.error: "Pinged glean, waiting for submission."
+
+feb 08, 2024 19:51:55.92 NEW SESSION
+feb 08, 2024 19:51:55.94 *** You are running in background task mode. ***
+feb 08, 2024 19:51:56.09 console.error: "C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release" "" 0 ".purge.bg_rm" "HttpCache"
+feb 08, 2024 19:51:56.09 *** You are running in headless mode.
+feb 08, 2024 19:51:56.10 console.error: "Pinged glean, waiting for submission."
+feb 08, 2024 19:52:00.48 *** You are running in background task mode. ***
+feb 08, 2024 19:52:00.48 *** You are running in headless mode.
+feb 08, 2024 19:52:00.51 *** You are running in background task mode. ***
+feb 08, 2024 19:52:00.52 *** You are running in headless mode.
+feb 08, 2024 19:52:00.63 console.error: "C:\\Users\\tarde\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release\\storage\\to-be-removed" "" 0 "*" "Quota"
+feb 08, 2024 19:52:00.64 console.error: "Pinged glean, waiting for submission."
+feb 08, 2024 19:52:00.68 console.error: "C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release" "cache2.2024-02-08-18-52-00.purge.bg_rm" 10 ".purge.bg_rm" "HttpCache"
+feb 08, 2024 19:52:00.68 console.error: "started removing C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release\\cache2.2024-02-08-18-52-00.purge.bg_rm"
+feb 08, 2024 19:52:00.69 console.error: "done removing C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release\\cache2.2024-02-08-18-52-00.purge.bg_rm. removed 22 entries."
+feb 08, 2024 19:52:00.70 console.error: "Pinged glean, waiting for submission."
+
+feb 08, 2024 20:04:53.45 NEW SESSION
+feb 08, 2024 20:04:53.46 *** You are running in background task mode. ***
+feb 08, 2024 20:04:53.47 *** You are running in headless mode.
+feb 08, 2024 20:04:53.66 console.error: "C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release" "" 0 ".purge.bg_rm" "HttpCache"
+feb 08, 2024 20:04:54.44 console.error: "Pinged glean, waiting for submission."
+feb 08, 2024 20:58:35.06 *** You are running in background task mode. ***
+feb 08, 2024 20:58:35.10 *** You are running in headless mode.
+feb 08, 2024 20:58:35.12 *** You are running in background task mode. ***
+feb 08, 2024 20:58:35.12 *** You are running in headless mode.
+feb 08, 2024 20:58:35.22 console.error: "C:\\Users\\tarde\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release\\storage\\to-be-removed" "" 0 "*" "Quota"
+feb 08, 2024 20:58:35.23 console.error: "Pinged glean, waiting for submission."
+feb 08, 2024 20:58:35.25 console.error: "C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release" "cache2.2024-02-08-19-58-35.purge.bg_rm" 10 ".purge.bg_rm" "HttpCache"
+feb 08, 2024 20:58:35.26 console.error: "started removing C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release\\cache2.2024-02-08-19-58-35.purge.bg_rm"
+feb 08, 2024 20:58:35.30 console.error: "done removing C:\\Users\\tarde\\AppData\\Local\\Mozilla\\Firefox\\Profiles\\1r2s8r4m.default-release\\cache2.2024-02-08-19-58-35.purge.bg_rm. removed 131 entries."
+feb 08, 2024 20:58:35.31 console.error: "Pinged glean, waiting for submission."

@@ -1,0 +1,39 @@
+package service.implementations;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestClient;
+
+import model.Formacion;
+import service.interfaces.FormacionServices;
+
+@Service
+public class FormacionServicesImpl implements FormacionServices {
+
+	@Autowired
+	RestClient restClient;
+	
+	String urlBases = "http://localhost:8080/02_servicio_crud_cursos/";
+	
+	@Override
+	public List<Formacion> catalogo() {
+		
+		return Array.asList(restClient.get().uri(urlBases + "cursos").retrieve().body(Formacion[].class));
+		 
+	}
+
+	@Override
+	public List<Formacion> catalogoPorDuracion() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void alta(Formacion foramacion) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

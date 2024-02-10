@@ -1,0 +1,8 @@
+package model;
+
+public class Formacion {
+	private String nombre;
+	private double horas;
+	private double precio;
+	
+}

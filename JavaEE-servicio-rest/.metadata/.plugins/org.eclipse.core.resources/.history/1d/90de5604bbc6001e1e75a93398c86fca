@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Países</title>
+</head>
+<body>
+	<center>
+	<h1>Continentes</h1>
+		<div id="continentes">
+		
+		</div>
+		<div id="paises">
+		
+		</div>
+		
+	</div>
+	</center>
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+			cargarContinentes();
+
+		});
+		var url = "http://localhost:8080/_05_servicio_paises/"
+
+		function cargarContinentes() {
+			var res = "<select id='lista' onchange='cargarDatos()'>";
+			$.get(url + "continentes", function(data) {
+
+				$.each(data, function(e) {
+					res += "<option value='"+e+"'>" + e + "</option>";
+				});
+				res += "</select><br>";
+				$("#continentes").html(res);
+			});
+
+		}
+	</script>
+</body>
+</html>

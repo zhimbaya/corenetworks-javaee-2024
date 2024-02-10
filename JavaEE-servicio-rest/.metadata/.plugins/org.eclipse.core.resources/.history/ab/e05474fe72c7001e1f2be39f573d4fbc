@@ -1,0 +1,17 @@
+package init;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
+public class Coche {
+	private matricula;
+	private String marca;
+	private String modelo;
+	private double kilometros;
+	private double precio;
+	private date fechaFabricacion;
+}

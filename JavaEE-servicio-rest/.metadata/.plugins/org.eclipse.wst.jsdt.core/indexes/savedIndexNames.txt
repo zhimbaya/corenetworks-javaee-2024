@@ -1,0 +1,14 @@
+INDEX VERSION 1.4+E:\CURSO JAVA EE 2023\JavaEE-servicio-rest\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+616132482.index
+431411071.index
+850770657.index
+1933762888.index
+2972898606.index
+1403637802.index
+2163207302.index
+2348135485.index
+4025323426.index
+4138045666.index
+4039703670.index
+1966463094.index
+2716982063.index

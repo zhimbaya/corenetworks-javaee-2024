@@ -10,8 +10,8 @@ import model.Libro;
 public interface LibrosDao extends JpaRepository<Libro, Integer> {
 	Libro findByTitulo(String titulo);
 	List<Libro> findByAutor(String autor);
-	@Query("select l from Libro l where l.tema.idTema=?1")
-	List<Libro> findByIdTema(int idTema);
+	//@Query("select l from Libro l where l.tema.idTema=?1")
+	List<Libro> findByTemaIdTema(int idTema);
 	
 	//lista de libros por nombre de tema
 	@Query("select l from Libro l where l.tema.tema=?1")

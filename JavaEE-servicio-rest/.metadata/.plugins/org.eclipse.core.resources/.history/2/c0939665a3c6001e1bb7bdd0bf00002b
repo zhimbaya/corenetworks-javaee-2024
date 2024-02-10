@@ -1,0 +1,19 @@
+package service.implementations;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestClient;
+
+import service.interfaces.PaisesServices;
+
+@Service
+public class PaisesServicesImpl implements PaisesServices {
+
+	@Autowired
+	RestClient restPaises;
+	
+	String urlBases = "https://restcountries.com/v2/all/";
+	
+
+
+}

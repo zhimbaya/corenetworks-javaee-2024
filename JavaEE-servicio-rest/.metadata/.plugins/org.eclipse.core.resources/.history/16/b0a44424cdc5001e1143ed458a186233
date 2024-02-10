@@ -1,0 +1,7 @@
+package service.config;
+
+public class ServiceConfig {
+	@ComponentScan(basePackages = {"service.implementations"})
+	@Configuration
+	public class Serviceconfig
+}

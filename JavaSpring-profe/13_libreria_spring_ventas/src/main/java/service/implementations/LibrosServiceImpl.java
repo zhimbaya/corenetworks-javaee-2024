@@ -39,7 +39,7 @@ public class LibrosServiceImpl implements LibrosService {
 					.map(e->mapeador.libroEntityToDto(e))
 					.toList();
 		}
-		return librosDao.findByIdTema(idTema)
+		return librosDao.findByTemaIdTema(idTema)
 				.stream()
 				.map(e->mapeador.libroEntityToDto(e))
 				.toList();

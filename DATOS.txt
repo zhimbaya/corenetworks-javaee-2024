@@ -187,11 +187,91 @@ JPA
 -controlador
 -vistas
 
+05/02/2024
+Cambiar dato de idLibro 11213 por 30303 se borro.
+Se termina el ejercicio spring 13.
 
+06/02/2024
+Servicios web.
+war sobre un servidor de aplicaciones.
+- Editar variable de entorno
+- Colocar war
+- Cmd en la ruta de apache tomcat /bin
+- Navegador :8080/name.war
+https://www.postman.com/downloads/
+***
+CRUD de cursos: 
+Servicio REST que expone los siguientes recursos: 
+-Búsqueda de todos los cursos 
+-Búsqueda de curso por su id 
+-Búsqueda de cursos entre rango de precios 
+-Alta de nuevo curso a partir del JSON, devolviendo lista de cursos que quedan 
+-Eliminar curso por denominación, devolviendo el curso eliminado 
+-Actualización de precios. Se recibe temática y porcentaje, y se suben en ese porcentaje los precios de todos los cursos de esa temática
+***
+---
+new mavenproject
+create un simple
+maven.parent
+maven.parent
+pom
 
+07/02/2024
+Static web proyect -- cliente rest
+***
+Ejercicio:
+Servicio learning
 
+El servicio formación ofrece los siguientes recursos:
 
+-catalogo de formaciones
+-lista formaciones por duracion máxima 
+-alta de formaciones
 
+Una formación se caracteriza por: nombre, horas, precio
+
+Para conseguir implementar esta funcionalidad, este servicio tendrá que interaccionar
+con el servicio de cursos. 
+***
+08/02/2024
+Ejercicio:
+Servicio paises
+Ofrece los siguientes recursos:
+-lista de continentes
+-lista de paises por continente
+-datos del pais más poblado
+
+Pais
+nombe,continente,capital,poblacion,bandera
+
+09/02/2024
+-Instalar plugin desde la Marketplace > spring > version 4
+>cdn > truted selected
+-new > other > spring boot > spring stared proyect
+name: cualquiera
+type: maven
+package:init
+add: spring web, lombok
+
+Cambiar puerto tomcat: 
+No tiene dirección por defecto: 
+https://docs.spring.io/spring-boot/docs/current/reference/html/application-properties.html
+
+Ejercicio:
+Microservicio que implemente un API REST de coches de segunda mano.
+
+cada coche tiene las siguientes propiedades:
+
+matricula (PK),marca,modelo,kilometros,precio,fechaFabricacion
+
+Funcionalidades:
+
+alta de coches (no se puede dar de alta un coche con matricula repetida)
+eliminar coche por matricula y devuelve el coche eliminado.
+consulta de coches por marca
+consulta de coches por precio maximo
+catalogo de todos los coches 
+actualizacion coches (se recibe un coche y se actualizan sus datos, a partir de la matricula)
 
 
 

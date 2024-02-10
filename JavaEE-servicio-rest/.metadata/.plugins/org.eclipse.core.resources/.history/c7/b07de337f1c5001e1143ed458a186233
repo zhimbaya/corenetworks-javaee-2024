@@ -1,0 +1,13 @@
+package model;
+
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class Formacion {
+	private String nombre;
+	private double horas;
+	private double precio;
+}

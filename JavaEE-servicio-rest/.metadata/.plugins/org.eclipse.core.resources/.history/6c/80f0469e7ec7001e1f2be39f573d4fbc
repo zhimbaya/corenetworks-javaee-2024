@@ -1,0 +1,33 @@
+package init.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import init.model.Coche;
+import init.service.interfaces.CocheService;
+
+@CrossOrigin("*")
+@RestController
+public class CochesController {
+	@Autowired
+	CocheService service;
+	
+	@PostMapping(value="alta" , consumes="application/json")
+	public void alta(@RequestBody Coche coche) {
+		service.alta(coche);
+	}
+	
+	@GetMapping(value="eliminar", produces="application/json")
+	public Coche eliminar(@RequestParam("matricula") String matricula) {
+		return service.eliminarCoche(matricula);
+	}
+	
+	public List<Coche> buscar(String marca){
+		
+	}
+}

@@ -1,0 +1,12 @@
+package init.service.interfaces;
+
+public interface CocheService {
+	//alta de coches (no se puede dar de alta un coche con matricula repetida)
+	
+	//eliminar coche por matricula y devuelve el coche eliminado.
+	//consulta de coches por marca
+	//	consulta de coches por precio maximo
+	//	catalogo de todos los coches 
+	//	actualizacion coches (se recibe un coche y se actualizan sus datos, a partir de la matricula)
+
+}

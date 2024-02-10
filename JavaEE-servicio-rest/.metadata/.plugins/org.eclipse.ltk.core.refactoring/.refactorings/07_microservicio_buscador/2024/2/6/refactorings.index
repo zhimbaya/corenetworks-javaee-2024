@@ -1,0 +1,7 @@
+1707497493308	Move 'service' to 'init'
+1707497499003	Move 'model' to 'init'
+1707497501698	Move 'controller' to 'init'
+1707497771884	Move 'BuscadorController.java' to 'controller'
+1707497787141	Move 'Resultado.java' to 'model'
+1707497800456	Move 'service' to 'service'
+1707497953354	Delete element

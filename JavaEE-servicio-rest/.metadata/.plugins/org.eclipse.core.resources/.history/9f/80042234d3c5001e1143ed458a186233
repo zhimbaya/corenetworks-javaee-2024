@@ -1,0 +1,14 @@
+package service.interfaces;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.Modifying;
+import org.springframework.data.jpa.repository.Query;
+
+import jakarta.transaction.Transactional;
+import model.Curso;
+
+public interface CursosService {
+	
+}
+

@@ -1,0 +1,17 @@
+package model;
+
+import com.fasterxml.jackson.annotation.JsonAlias;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class Formacion {
+	@JsonAlias(value="denominacion")
+	private String nombre;
+	private double horas;
+	private double precio;
+}

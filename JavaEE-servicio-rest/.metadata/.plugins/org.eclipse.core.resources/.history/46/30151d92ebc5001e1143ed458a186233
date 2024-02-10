@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Buscador</title>
+Access-Control-Allow-Origin: http://siteA.com
+</head>
+<body>
+	<center>
+		Introduce temática: <input type="text" id="tematica"/>
+		<br>
+		<br>
+		<input value="Buscar" id="enviar" type="button">
+		<br>
+		<br>
+		<div id="tbResultados">
+		</div>
+	</center>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$("#enviar").click(buscarResultados);
+	function buscarResultados(){
+		let url = "http://localhost:8080/_01_servicio_buscador/buscar";
+		let params = {"tematica":$("#tematica").val()};
+		$.get(url,params, function(data){
+			let res = "<h1>Resultados de la búsqueda</h1>";
+			$.each(data,function(e,i){
+				res += "<a href='"+e.url+"'>"+e.url+"</a><br>";
+				res += "<b>"+e.descripcion+"</b><br><hr>"
+			});
+		$("#tbResultados").html(res);
+		});
+	}
+</script>
+</body>
+</html>

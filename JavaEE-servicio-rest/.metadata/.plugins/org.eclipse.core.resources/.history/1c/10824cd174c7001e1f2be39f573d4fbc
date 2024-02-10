@@ -1,0 +1,15 @@
+package init.service.interfaces;
+
+import init.model.Coche;
+
+public interface CocheService {
+	//alta de coches (no se puede dar de alta un coche con matricula repetida)
+	void alta(Coche coche);
+	//eliminar coche por matricula y devuelve el coche eliminado.
+	Coche eliminarCocheMatricula(String matricula);
+	//consulta de coches por marca
+	//	consulta de coches por precio maximo
+	//	catalogo de todos los coches 
+	//	actualizacion coches (se recibe un coche y se actualizan sus datos, a partir de la matricula)
+
+}

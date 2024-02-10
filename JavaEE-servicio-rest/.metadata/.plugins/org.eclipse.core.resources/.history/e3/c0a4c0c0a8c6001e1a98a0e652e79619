@@ -1,0 +1,43 @@
+package service.implementations;
+
+import java.util.Arrays;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestClient;
+
+import model.Pais;
+import service.interfaces.PaisesServices;
+
+@Service
+public class PaisesServicesImpl implements PaisesServices {
+
+	@Autowired
+	RestClient restPais;
+	
+	String urlBases = "https://restcountries.com/v2/all/";
+
+	@Override
+	public List<String> continentes() {
+		return Arrays.asList(restPais.get()
+				.uri(urlBases + "region")
+				.retrieve()
+				.body(Pais[].class));
+	}
+
+	@Override
+	public List<Pais> paisesPorContinente(String continente) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Pais paisMasPoblado(Long poblacion) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+
+
+}

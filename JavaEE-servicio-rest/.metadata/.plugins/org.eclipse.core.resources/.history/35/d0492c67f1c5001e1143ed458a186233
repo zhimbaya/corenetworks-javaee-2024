@@ -1,0 +1,6 @@
+package service.interfaces;
+
+public class FormacionServices {
+	List<Formacion> catalogo();
+	
+}

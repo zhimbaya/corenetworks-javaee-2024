@@ -1,0 +1,11 @@
+package service.interfaces;
+
+import java.util.List;
+
+import model.Pais;
+
+public interface PaisesServices {
+	List<Pais> paises(String);
+	List<Pais> paisesPorContinente(String continente);
+	Pais paisMasPoblado(Long poblacion);
+}

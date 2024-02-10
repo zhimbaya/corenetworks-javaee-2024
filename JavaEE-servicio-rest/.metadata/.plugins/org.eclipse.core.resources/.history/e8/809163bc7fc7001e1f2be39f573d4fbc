@@ -1,0 +1,53 @@
+package init.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import init.model.Coche;
+import init.service.interfaces.CocheService;
+import jakarta.websocket.server.PathParam;
+
+@CrossOrigin("*")
+@RestController
+public class CochesController {
+	@Autowired
+	CocheService service;
+	
+	@PostMapping(value="alta" , consumes="application/json")
+	public void alta(@RequestBody Coche coche) {
+		service.alta(coche);
+	}
+	
+	@DeleteMapping(value="eliminar", produces="application/json")
+	public Coche eliminar(@RequestParam("matricula") String matricula) {
+		return service.eliminarCoche(matricula);
+	}
+	
+	@GetMapping(value="buscar/{marca}", produces="application/json")
+	public List<Coche> buscar(@PathVariable("marca") String marca){
+		return service.buscar(marca);
+	}
+	
+	@GetMapping(value="buscar/{max}" , produces ="application/json")
+	public List<Coche> buscar(@PathVariable("max") double precioMax){
+		return service.buscarCoche(precioMax);
+	}
+	
+	@GetMapping(value="buscar", produces = "application/json")
+	public List<Coche> buscar(){
+		return service.buscar();
+	}
+	
+	public void actualizar(@Coche coche) {
+		return service.actualizarCoches(coche);
+	}
+}

@@ -1,0 +1,5 @@
+package service.config;
+
+public class ServiceConfig {
+	@ComponentScan(basePackga)
+}
