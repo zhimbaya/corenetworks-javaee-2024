@@ -1,0 +1,27 @@
+<div class="container">
+  <h1>Gestión Pedidos</h1>
+  <h2>Pedido</h2>
+  <b>Producto:</b><input type="text" name="" id="" [(ngModel)]="pedido.nombre" class="form-control">
+  <b>Precio:</b><input type="text" name="" id="" [(ngModel)]="pedido.precio" class="form-control">
+  <b>Unidades:</b><input type="text" name="" id="" [(ngModel)]="pedido.unidades" class="form-control">
+  <br>
+  <input type="button" value="Grabar pedido" (click)="agregarPedido()" class="btn btn-success">
+  <hr>
+
+  <input type="button" value="Mostrar pedidos" (click)="verPedidos()" class="btn btn-warning">
+  <br>
+  <br>
+  <h2>Pedidos</h2>
+  <table class="table" *ngIf="tablaVisible">
+    <tr>
+      <th>Producto</th>
+      <th>Precio</th>
+      <th>Unidades</th>
+    </tr>
+    <tr *ngFor="let n of pedidos">
+      <td>{{n.nombre}}</td>
+      <td>{{n.precio}}</td>
+      <td>{{n.unidades}}</td>
+    </tr>
+  </table>
+</div>

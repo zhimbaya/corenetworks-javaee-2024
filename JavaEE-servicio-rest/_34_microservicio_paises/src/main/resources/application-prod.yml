@@ -1,0 +1,11 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: servicio-paises
+eureka:
+  client:
+    service-url:
+      default-zone: http://${HOST_EUREKA}:8761/eureka
+  instance:
+    hostname: ${HOST}

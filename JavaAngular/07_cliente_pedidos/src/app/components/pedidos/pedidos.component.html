@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="form-group">
+		<h3>Producto</h3>
+		<select  ng-model="producto" class="form-control" [(ngModel)]="pedido.codigoProducto">
+			<option *ngFor="let p of productos" value="{{p.codigoProducto}}">
+        {{p.producto}} | {{p.precioUnitario}} | {{p.stock}} | {{p.codigoProducto}} |
+      </option>
+		</select>
+	</div>
+  <div class="form-group">
+		<h3>Unidades</h3>
+		<input type="number" min="0" [(ngModel)]="pedido.unidades" class="form-control"/>
+	</div>
+  <br/>
+	<button type="button" class="btn btn-success" (click)="guardarPedido()">Confirmar Pedido</button>
+  &nbsp;
+	<button type="button" class="btn btn-warning" (click)="cargarPedidos()">Cargar Pedidos</button>
+  <br>
+  <br>
+  <h1>Pedidos</h1>
+		<br/>
+		<div >
+			<table class="table table-striped table-bordered" (change)="cargarPedidos()">
+				<thead><tr><th>Numero de pedido</th><th>Producto</th><th>Total</th><th>Fecha pedido</th></tr></thead>
+				<tbody>
+          <tr *ngFor="let p of pedidos">
+					<td>{{p.idPedido}}</td>
+					<td>{{p.codigoProducto}}</td>
+					<td>{{p.total}}</td>
+					<td>{{p.fechaPedido}}</td>
+				</tr>
+			</tbody>
+			</table>
+		</div>
+</div>

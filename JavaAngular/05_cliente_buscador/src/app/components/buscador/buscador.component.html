@@ -1,0 +1,16 @@
+<div class="container">
+  <h1>Temática</h1>
+  <label for="tematica">Introduce temática:</label>
+  <input type="text" id="tematica" [(ngModel)]="tematica" class="form-control"/>
+  <br>
+  <input value="Buscar" id="enviar" type="button" (click)="buscar()" class="btn btn-success">
+  <br>
+  <br>
+  <div>
+    <h3>Resultado de la búsqueda</h3>
+    <div *ngFor="let r of resultados">
+      <a href="{{r.url}}">{{r.url}}</a><br>
+      <b>{{r.descripcion}}</b><br><hr>
+    </div>
+  </div>
+</div>

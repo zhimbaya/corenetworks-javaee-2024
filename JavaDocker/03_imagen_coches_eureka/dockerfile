@@ -1,0 +1,6 @@
+FROM openjdk
+ADD coches_eureka.jar coches_eureka.jar
+ENV HOST_EUREKA=192.168.87.1
+ENV PORT_EUREKA=8761
+ENV HOST=192.168.87.1
+ENTRYPOINT java -jar coches_eureka.jar
