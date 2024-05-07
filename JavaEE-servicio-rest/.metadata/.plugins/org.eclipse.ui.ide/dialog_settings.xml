@@ -38,6 +38,21 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="E:\CURSO JAVA EE 2023\JavaEE-profe-servicio-rest\16_microservicio_libreria"/>
+			<item value="E:\CURSO JAVA EE 2023\JavaEE-servicio-rest\_10_microservicio_crud_cursos"/>
+			<item value="E:\CURSO JAVA EE 2023\JavaEE-servicio-rest\36_servidor_configuracion"/>
+			<item value="E:\CURSO JAVA EE 2023\JavaEE-servicio-rest\28_microservicio_pedidos"/>
+			<item value="E:\CURSO JAVA EE 2023\JavaEE-servicio-rest\29_cliente_front_pedidos"/>
+			<item value="E:\CURSO JAVA EE 2023\JavaEE-servicio-rest\27_microservicio_productos"/>
+			<item value="E:\CURSO JAVA EE 2023\JavaEE-servicio-rest\09_microservicio_rastreator"/>
+			<item value="E:\CURSO JAVA EE 2023\JavaEE-servicio-rest\08_microservicio_coches"/>
+			<item value="E:\CURSO JAVA EE 2023\JavaEE-servicio-rest\17_microservicio_tienda_libros"/>
+			<item value="E:\CURSO JAVA EE 2023\JavaEE-servicio-rest\16_microservicio_libreria"/>
+			<item value="E:\CURSO JAVA EE 2023\JavaEE-servicio-rest\17_microservicio_tienda_libros_token_oauth2"/>
+			<item value="E:\CURSO JAVA EE 2023\JavaEE-servicio-rest\16_microservicio_libreria_keycloak"/>
+			<item value="E:\CURSO JAVA EE 2023\JavaEE-servicio-rest\_16_microservicio_libreria"/>
+			<item value="E:\CURSO JAVA EE 2023\JavaEE-servicio-rest\19_microservicio_learning_acceso_por_token_oauth2"/>
+			<item value="E:\CURSO JAVA EE 2023\JavaEE-servicio-rest\18_microservicio_crud_cursos_securizado_keycloak"/>
 			<item value="E:\CURSO JAVA EE 2023\JavaEE-servicio-rest\07_microservicio_buscador"/>
 			<item value="E:\CURSO JAVA EE 2023\JavaEE-profe-servicio-rest\02_servicio_crud_cursos"/>
 		</list>

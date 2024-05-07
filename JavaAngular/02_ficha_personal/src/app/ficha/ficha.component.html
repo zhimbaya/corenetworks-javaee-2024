@@ -1,0 +1,16 @@
+<div>
+  <label for="nombre">Nombre</label>
+  <input type="text" name="nombe" id="nombre" [(ngModel)]="persona.nombre">
+  <br>
+  <label for="edad">Edad</label>
+  <input type="text" name="edad" id="edad" [(ngModel)]="persona.edad">
+  <br>
+  <label for="depar">Departamento</label>
+  <input type="text" name="depar" id="depar" [(ngModel)]="persona.departamento">
+  <br>
+  <input type="button" name="btnGrabar" id="btnGrabar" value="Grabar" (click)="grabar()">
+  <br>
+  <div>
+    {{resultado}}
+  </div>
+</div>

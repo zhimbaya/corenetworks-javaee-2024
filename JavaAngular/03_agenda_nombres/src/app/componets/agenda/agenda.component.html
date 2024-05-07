@@ -1,0 +1,16 @@
+<div class="container">
+  <b>Nombre:</b><input type="text" name="" id="" [(ngModel)]="nombre" class="form-control">
+  <br>
+  <input type="button" value="Añadir nombre" (click)="guardar()" class="btn btn-success">
+  <br>
+  <br>
+  <b>Nombres:</b>
+  <select size="3" class="custom-select" [(ngModel)]="nombreSel">
+    <option *ngFor="let n of nombres" value="{{n}}">
+      {{n}}
+    </option>
+  </select>
+  <br>
+  <br>
+  <input type="button" value="Eliminar nombre" (click)="eliminar()" class="btn btn-danger">
+</div>

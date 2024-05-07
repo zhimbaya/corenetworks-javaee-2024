@@ -1,0 +1,12 @@
+server:
+  port: 8000
+spring:
+  application:
+    name: servicio-coches
+eureka:
+  instance:
+    hostname: ${HOST}
+  client:
+    serviceUrl:
+     defaultZone: http://${HOST_EUREKA}:${PORT_EUREKA}/eureka #localhost
+
