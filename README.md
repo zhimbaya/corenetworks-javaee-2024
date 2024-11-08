@@ -1,26 +1,61 @@
 # corenetworks-javaee-2024
-Hola Amigos! Este es el repositorio donde iré subiendo toda la información relacionada con el curso de Corenetworks de Java EE, tanto documentación, ejercicios, guías, etc. Espero que os sea de mucha ayuda. Happy Code! :)
 
-# 12/12/2023
+# Curso de JavaEE CoreNetworks en el Centro de Formación Tecnológica de Getafe
+[![GitHub](https://img.shields.io/badge/CFTIC-Web-blue?style=for-the-badge&logo=github&logoColor=white&labelColor=101010)](https://cftic.centrosdeformacion.empleo.madrid.org/)
+
+![](Paginas/header.png)
+
+📲 Hola Amigos! Este es el repositorio donde iré subiendo toda la información relacionada con el curso de Corenetworks de Java EE, tanto documentación, ejercicios, guías, etc. Espero que os sea de mucha ayuda.
+
+🚀 Happy Code!
+> ##### Si consideras útil este curso, apóyalo haciendo "★ Star" en el repositorio. ¡Gracias!
+
+## Índice
+- [Comandos favoritos](Paginas/02_comandos_fav.md)
+
+## Ayuda
+- [Webs de ayuda e interes](Paginas/01_help.md)
+
+## Enlaces de interés
+* Web oficial (Documentación, descarga...): [Oracle.com](https://www.oracle.com/es/)
+* [Documentación Oficial de JavaSE](https://docs.oracle.com/en/java/javase/21/docs/api/index.html)
+* [Repositorio Github](https://github.com/amartinsierra/javaenterprise2023)
+* [JakartaEE](https://jakarta.ee/specifications/platform/8/apidocs/)
+
+🤩 Enjoy it!
+
+### En mi perfil de GitHub tienes más información
+
+[![Web](https://img.shields.io/badge/GitHub-zhimbaya-14a1f0?style=for-the-badge&logo=github&logoColor=white&labelColor=101010)](https://github.com/zhimbaya)
+
+#### Puedes apoyar mi trabajo haciendo "☆ Star" en el repo o nominarme a "GitHub Star". ¡Gracias!
+
+[![GitHub Star](https://img.shields.io/badge/GitHub-Nominar_a_star-yellow?style=for-the-badge&logo=github&logoColor=white&labelColor=101010)](https://stars.github.com/nominate/)
+
+![](Paginas/jakarta_ee.jpg)
+# Diario
+
+### 12/12/2023
 1. Descargar eclipse
 2. Utilizar la vista de Java
 3. Desmarcar modularidad
 
-# 13/12/2023
-- https://www.udemy.com/course/aprende-a-programar-en-java/?couponCode=D655A11AA347AFE2737E
-- https://www.udemy.com/course/programacion-orientada-a-objetos-con-java-b/?couponCode=0113E81CBA9482D12FBC
+### 13/12/2023
+- Cursos de Udemy:
+- [Aprende a Programar en Java](https://www.udemy.com/course/aprende-a-programar-en-java/?couponCode=D655A11AA347AFE2737E)
+- [JavaEE](https://www.udemy.com/course/programacion-orientada-a-objetos-con-java-b/?couponCode=0113E81CBA9482D12FBC)
 
-# 14/12/23
+### 14/12/2023
 - https://docs.oracle.com/en/java/javase/21/docs/api/index.html
 - https://github.com/amartinsierra/javaenterprise2023
 
-# 15/12/23
+### 15/12/2023
 - Git y github
 - Java 8
-- metodo con código (default y static)
-- interfaces funcionales
+- Método con código (default y static)
+- Interfaces funcionales
 
-# 18/12/2023
+### 18/12/2023
 - Descargar Tomcat 10
 - Nuevo Workspace
 - Instalará servidor
@@ -28,17 +63,15 @@ Hola Amigos! Este es el repositorio donde iré subiendo toda la información rel
 - Ejecutar servidor Tomcat y web sencilla
 - Crear un servlet
 
-# 19/12/2023
+### 19/12/2023
 - Git
 - import > project from git > clone Uri
-- https://github.com/zhimbaya/corenetworks-java-2024.git
-- git@github.com:zhimbaya/corenetworks-java-2024.git
 - JSP
 
-# 20/12/23
+### 20/12/23
 A partir del proyecto 15 añadir la anotación y quitar de web.xml todo del servlet.
 
-# 10/01/2024
+### 10/01/2024
 - Instalación de Mysql y workbech
 - https://dev.mysql.com/downloads/installer/
 
@@ -53,22 +86,22 @@ A partir del proyecto 15 añadir la anotación y quitar de web.xml todo del serv
 3. logica de negocio, JPA
 	- error de persitence > boton derecho proyecto > JPA Tools > actualizar lista.
 
-# 11/01/2024
+### 11/01/2024
 - https://jakarta.ee/specifications/platform/8/apidocs/
 
-# 15/01/2024
+### 15/01/2024
 - https://www.w3schools.com/git/git_pull_from_remote.asp?remote=github
 - https://miguelangelmedina.es/28-anadir-un-corrector-ortografico-en-espanol-castellano-a-eclipse/
 - Estamos con CSS.
 
-# 16/01/2024
+### 16/01/2024
 - Instalación de visual studio code.
 - https://caniuse.com/?search=inner
 
-# 17/01/2024
+### 17/01/2024
 - JSON
 - `` var curso = {"nombre":"java","duracion":100};``
-- Suscripción
+- Suscripción:
 - https://learn.oracle.com/ords/training/dl4_activation.activateOrder?key=FB41E417D6CEAD5D
 ```
 - Una vez clonado el repositorio, estarás trabajando dentro de la rama por defecto (Por defecto es main)
@@ -81,14 +114,14 @@ git commit -m "Agregué cambios a mi repo!"
 git push origin main
 ```
 
-# 18/01/2024
+### 18/01/2024
 - JQuery
 ```
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 ```
 - AJAX
 
-# 19/01/2024
+### 19/01/2024
 Lombok
 Descargar el paquete por maven
 Instalar el plugin de Lombok en eclipse
@@ -302,7 +335,7 @@ https://developer.mozilla.org/es/docs/Web/HTTP/Status
 
 ResponseEntity >> juega con los códigos de estado.
 
-13/02/2024
+### 13/02/2024
 Documentación
 http://localhost:8000/swagger-ui/index.html
 
@@ -328,7 +361,7 @@ buscador de libro por ISBN: usuarios autenticados
 alta de libros: usuarios del rol administrador
 resto de recursos acceso libre 
 
-# 14/02/2024
+### 14/02/2024
 - Tokens de validación
 - Instalación de keycloak: ejecutar en la carpeta bin : kc start-dev
 - un user y pass : diego
@@ -340,7 +373,7 @@ resto de recursos acceso libre
 - crear rol > ADMINS, USERS, OPERATORS
 - añadir usuarios > user > add user : admin, user1, user2 a ADMINS, USERS, OPERATORS
 
-# 15/02/2024
+### 15/02/2024
 - Para crear el token: 
 - Añadir DEPENDENCIA >> oauth2-resource-server
 - postman:
@@ -354,7 +387,7 @@ resto de recursos acceso libre
 - Postman > Authorization > Bearery token
 - Proyecto: editar SecurityConfig, añadir, JwtAuthConverter, editar application.properties.
 
-# 16/02/2024
+### 16/02/2024
 - spring cloud : un proyecto spring, añadir dependencia eureka server
 - Servidor Eureka
 - @EnableEurekaServer en application del servidor eureka.
@@ -367,10 +400,10 @@ resto de recursos acceso libre
 - En el rest client: añadir dependencia
 	- cambiar la url: localhost por un nombre del servidor eureka.
 	
-# 19/02/2024
+### 19/02/2024
 - Hacer ejercicio pdf y base de datos tiendavirtual
 	
-# 20/02/2024
+### 20/02/2024
 - Crear un spring proyect > reactive gateway y eureka discovery client
 - Convertir a yaml
 - Ejercicio: 31 debe funcioanar ejer 22, 27, 28, 30
@@ -405,21 +438,21 @@ resto de recursos acceso libre
 - RunAs > maven built > poner un paquete > jar > cmd > java -jar proyecto
 - https://www.docker.com/products/docker-desktop/
 
-# 21/02/2024
+### 21/02/2024
 - Crear un repo en github: servicio-pedidos.yml y servicio-productos.yml > con la configuración de .yml
 - proyecto, 36 configurar application.yml y application > @EnableConfigServer > dependencia config server
 - Nuevo proyecto, 37, añadir config client
 - Arrancar eureka, servidor, gateway, luego 37 y 38
 - Crear un application.properties para cada entorno dev, prod.
 - Configurar repo local ejercicio 41, añadir config server y editar el application.yml
+
 ### Docker
 - Contenedores
 - https://hub.docker.com/
 - docker pull ibtech/tomcat9
 - docker run imagen
-- 
 
-# 22/02/2024
+### 22/02/2024
 - docker hub : docker pull openjdk
 - dockerfile
 ```
@@ -437,7 +470,7 @@ ENTRYPOINT java -jar buscador.jar
 - eureka >  hostname: ${HOST}
 - https://github.com/amartinsierra/configuracion_microservicios
 
-# 23/02/2024
+### 23/02/2024
 - https://jwt.io/
 - Generar el token con la ip del servidor no con localhost
 - Subir contenedores
@@ -446,7 +479,7 @@ ENTRYPOINT java -jar buscador.jar
 - docker push randysim/microservicios:buscador
 - docker pull randysim/microservicios:buscador
 
-# 26/02/2024
+### 26/02/2024
 - Seguir la Guia pdf angular x.
 - Angular Extension Pack - Loiane Groner
 - ng new --no-standalone 01_ejemplo
@@ -455,25 +488,25 @@ ENTRYPOINT java -jar buscador.jar
 - ng server ejemplo
 - tsconfig.json > strict = false
 
-# 27/02/2024
+### 27/02/2024
 - Acceso a recursos externos (servicio rest)
 - https://github.com/amartinsierra/angular_feb_2024
 
-# 28/02/2024
+### 28/02/2024
 - 16 ejer
 - 09_cliente_libreria
 
-# 29/02/2024
+### 29/02/2024
 - ejercicio
 
-# 01/03/2024
+### 01/03/2024
 - cabecera http: header, body 
 - body: authorization: "basic usuario:password" << base64
 
-# 04/03/2024
+### 04/03/2024
 - keycloak = Web Origins :http://localhost:4200
 - App Angular > ng build --base-href=/direccion
 - crear un web dinamic proyect y pegar los indes y .js
 
-# 05/03/2024
+### 05/03/2024
 - Proyecto
