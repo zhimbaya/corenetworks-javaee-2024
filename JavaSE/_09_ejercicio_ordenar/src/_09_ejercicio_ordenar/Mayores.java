@@ -3,7 +3,7 @@ package _09_ejercicio_ordenar;
 public class Mayores {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		var num = new Mayores();
 		System.out.println(num.totalMayores(40));
 		

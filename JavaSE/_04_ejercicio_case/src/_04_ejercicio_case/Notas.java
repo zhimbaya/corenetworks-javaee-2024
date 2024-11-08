@@ -4,6 +4,8 @@ public class Notas {
 
 	public static void main(String[] args) {
 		int nota = 10;
+		
+		//NO ES POSIBLE UTILIZAR VALORES LONG PERO SI STRING
 		switch (nota) {
 		case 1:
 		case 2:

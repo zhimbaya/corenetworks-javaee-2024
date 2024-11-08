@@ -1,5 +1,3 @@
-# corenetworks-javaee-2024
-
 # Curso de JavaEE CoreNetworks en el Centro de Formación Tecnológica de Getafe
 [![GitHub](https://img.shields.io/badge/CFTIC-Web-blue?style=for-the-badge&logo=github&logoColor=white&labelColor=101010)](https://cftic.centrosdeformacion.empleo.madrid.org/)
 
