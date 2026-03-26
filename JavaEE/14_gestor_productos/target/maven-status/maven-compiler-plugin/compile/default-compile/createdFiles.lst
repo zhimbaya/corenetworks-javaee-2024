@@ -1,5 +1,0 @@
-service\ProductosService.class
-servlets\EliminarProductoServlet.class
-servlets\AltaProductoServlet.class
-servlets\BuscarPorCategoriaServlet.class
-model\Producto.class
