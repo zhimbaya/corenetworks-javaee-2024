@@ -1,3 +1,7 @@
+*****Se empieza el curso*****
+find . -type d \( -name "bin" -o -name "target" -o -name "build" -o -name ".settings" -o -name ".gradle" -o -name "out" \) -exec rm -rf {} +
+find . -type f \( -name ".classpath" -o -name ".project" -o -name "*.log" -o -name "*.tmp" -o -name "*.bak" -o -name "*.swp" \) -delete
+
 12/12/2023
 1.- Descargar eclipse
 2.- Utilizar la vista de Java
